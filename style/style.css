@@ -1,0 +1,28 @@
+/* INÍCIO DAS CONFIGURAÇÕES GERIAS DA PÁGINA */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+
+#corpo-pagina-geral{
+    background: #fff;
+}
+
+#corpo-conteudo{
+    background: #FFF;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+
+/* FIM DAS CONFIGURAÇÕES GERIAS DA PÁGINA */
+
+.meu-h2{
+
+    border: 3px solid #000;
+    text-align: center;
+    color: red;
+
+}

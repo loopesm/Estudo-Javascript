@@ -1,0 +1,18 @@
+/* CONFIGURAÇÃO PADRÃO DO MEDIA-QUERIES */
+
+/* O VALOR DE ".98" É ACRESCENTADO PARA CORREÇÃO DE BUGS EM NAVEGADORES */
+
+/*Extra small devices (portrait phones, menor que 576px)*/
+@media (min-width: 575.98px) {}
+
+/*Small devices (landscape phones, 576px e maiores)*/
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/*Medium devices (tablets, 768px e maiores)*/
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/*Large devices (desktops, 992px e maiores)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/*Extra large devices (large desktops, 1200px  e maiores)*/
+@media (min-width: 1200px) {}
