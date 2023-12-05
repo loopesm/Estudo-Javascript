@@ -1,2 +1,2 @@
 # Estudo-Javascript
-Início do Estudo em JavaScript
+Início do Estudo em JavaScript.
