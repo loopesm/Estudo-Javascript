@@ -1,5 +1,5 @@
 // variavel tipo string
-var texto = "Curso de JavaScript"
+var texto = "Aqui tem um texto"
 
 // variavel tipo number
 
