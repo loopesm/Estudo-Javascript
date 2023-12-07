@@ -1,120 +1,96 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-
   <head>
-    
     <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="description" content="Conteúdo do Site">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="description" content="Conteúdo do Site" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!--HTML5 SHIV = [if lt IE 9]-->
-	  <script src="js/html5shiv.min.js"></script>
+    <script src="js/html5shiv.min.js"></script>
     <!--[endif]-->
 
     <!-- Folhas de Estilo Internas-->
-    <link rel="stylesheet" href="./style/media-queries-breakpoints.css">
-    <link rel="stylesheet" href="./style/normalize.css">
-    <link rel="stylesheet" href="./style/style.css">
-    
+    <link rel="stylesheet" href="./style/media-queries-breakpoints.css" />
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/67988a88d0.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/67988a88d0.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>JavaScript</title>
-
   </head>
 
-  <body class="container-fluid"> <!-- INICIO TAG BODY-->
+  <body class="container-fluid">
+    <!-- INICIO TAG BODY-->
 
     <!-- INICIO CABEÇALHO-->
     <div class="row align-items-center">
       <div class="col-sm-12 text-center bg-dark text-light">
         <h1 class="m-3">Estudos Sobre JavaScript</h1>
       </div>
-    </div> 
+    </div>
     <!-- FIM CABEÇALHO-->
 
     <!--INICIO CONTEUDO 01-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
-
         <h2 class="meu-h2 mt-3">Introdução ao JavaScript</h2>
 
-        <p class="lead">Podemos fazer a inclusão direto no arquivos HTML 
-          ou em um arquivo externo dentro da pasta do projeto.
+        <p class="lead">
+          Podemos fazer a inclusão direto no arquivos HTML ou em um arquivo
+          externo dentro da pasta do projeto.
         </p>
 
-        <p class="lead">Caso o script seja extenso, é recomendado que 
-          seja feito um arquivo externo.
+        <p class="lead">
+          Caso o script seja extenso, é recomendado que seja feito um arquivo
+          externo.
         </p>
 
-        <p class="lead">Podemos incluir o script na Tag <b>HEAD</b> ( executa antes dos código no Body ) ou na
-          Tag <b>BODY</b> ( executa de acordo com com a árvore do código Body ), porém dependendo da usabilidade do script vai ocorrer
-          um erro de interpretação do código.
+        <p class="lead">
+          Podemos incluir o script na Tag <b>HEAD</b> ( executa antes dos código
+          no Body ) ou na Tag <b>BODY</b> ( executa de acordo com com a árvore
+          do código Body ), porém dependendo da usabilidade do script vai
+          ocorrer um erro de interpretação do código.
         </p>
 
-        <hr>
+        <hr />
 
-        <p class="lead"><b>PRECEDÊNCIA DO CÓDIGO:</b> para interação
-        com elementos HTML devemos incluir o script após o elemento em questão 
-        ter sido carregado pela Tag Body dentro do Browser.
+        <p class="lead">
+          <b>PRECEDÊNCIA DO CÓDIGO:</b> para interação com elementos HTML
+          devemos incluir o script após o elemento em questão ter sido carregado
+          pela Tag Body dentro do Browser.
         </p>
 
-        <hr>
+        <hr />
 
-        <p class="lead"><b>COMENTÁRIOS:</b> // = Comentário de uma linha <br> /* */ = Comentário de multiplas linhas </p>
-
+        <p class="lead">
+          <b>COMENTÁRIOS:</b> // = Comentário de uma linha <br />
+          /* */ = Comentário de multiplas linhas
+        </p>
       </div>
     </div>
     <!--FIM CONTEUDO 01-->
-    
+
     <!--INICIO CONTEUDO 02-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
-
-        <h2 class="meu-h2 mt-3">Variáveis</h2>
-
-        <p class="lead">As Variáveis armazenam determinadas informações.</p>
-
-        <hr>
-
-        <p class="lead"><b>TIPOS DE VARIÁVEIS:</b></p>
-        <p class="lead m-0"><b>String:</b> Armazenamento de Textos.</p>
-        <p class="lead m-0"><b>Number:</b> Valores numéricos inteiros ou fracionados,
-        positivos e negativos.</p>
-        <p class="lead"><b>Boolean:</b> Armazenam estados, como TRUE ou FALSE.</p>
-
-        <hr>
-
-        <p class="lead"><b>REGRAS DE NOMENCLATURA:</b></p>
-        <p class="lead m-0">Não iniciar com números, somente letras.</p>
-        <p class="lead m-0">Não pode contar caracteres especiais.</p>
-        <p class="lead m-0">Não pode ser iguais as palavras reservadas da linguagem.</p>
-        <p class="lead">Há a diferencição de caracteres <b>Maiuscúlos</b> e <b>Minúsculos</b> nos nomes.</p>
-
-        <hr>
-
-        <p class="lead"><b>DECLARAÇÃO DE VARIÁVEL:</b></p>
-        <p class="lead">Utiliza-se a instrução <b>"VAR"</b>.</p>
-
-        <hr>
-
-        <p class="lead"><b>VENDO O VALOR DE UMA VARIÁVEL:</b></p>
-        <p class="lead m-0"><b>alert()</b>: Abre uma janela com a mensagem.</p>
-        <p class="lead m-0"><b>document.write()</b>: Escreve o valor da váriavel em um elemento dentro do DOM.</p>
-        <p class="lead"><b>console.log()</b>: Escreve o valor da variável no console do navegador.</p>
-
-        <div class="w-50 d-inline-block bg-danger text-light">
-          <p class="lead"><b>Valores da Variáveis Atribuidas: </b></p>
-          <script src="js/variaveis.js"></script>
-        </div>
-
-        <hr>
-
+        <h2 class="meu-h2 mt-3">a</h2>
       </div>
     </div>
     <!--FIM CONTEUDO 02-->
@@ -122,28 +98,92 @@
     <!--INICIO CONTEUDO 03-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
+        <h2 class="meu-h2 mt-3">Variáveis</h2>
 
+        <p class="lead">As Variáveis armazenam determinadas informações.</p>
+
+        <hr />
+
+        <p class="lead"><b>TIPOS DE VARIÁVEIS:</b></p>
+        <p class="lead m-0"><b>String:</b> Armazenamento de Textos.</p>
+        <p class="lead m-0">
+          <b>Number:</b> Valores numéricos inteiros ou fracionados, positivos e
+          negativos.
+        </p>
+        <p class="lead">
+          <b>Boolean:</b> Armazenam estados, como TRUE ou FALSE.
+        </p>
+
+        <hr />
+
+        <p class="lead"><b>REGRAS DE NOMENCLATURA:</b></p>
+        <p class="lead m-0">Não iniciar com números, somente letras.</p>
+        <p class="lead m-0">Não pode contar caracteres especiais.</p>
+        <p class="lead m-0">
+          Não pode ser iguais as palavras reservadas da linguagem.
+        </p>
+        <p class="lead">
+          Há a diferencição de caracteres <b>Maiuscúlos</b> e
+          <b>Minúsculos</b> nos nomes.
+        </p>
+
+        <hr />
+
+        <p class="lead"><b>DECLARAÇÃO DE VARIÁVEL:</b></p>
+        <p class="lead">Utiliza-se a instrução <b>"VAR"</b>.</p>
+
+        <hr />
+
+        <p class="lead"><b>VENDO O VALOR DE UMA VARIÁVEL:</b></p>
+        <p class="lead m-0"><b>alert()</b>: Abre uma janela com a mensagem.</p>
+        <p class="lead m-0">
+          <b>document.write()</b>: Escreve o valor da váriavel em um elemento
+          dentro do DOM.
+        </p>
+        <p class="lead">
+          <b>console.log()</b>: Escreve o valor da variável no console do
+          navegador.
+        </p>
+
+        <div class="w-50 d-inline-block bg-danger text-light">
+          <p class="lead"><b>Valores da Variáveis Atribuidas: </b></p>
+          <script src="js/variaveis.js"></script>
+        </div>
+
+        <hr />
       </div>
     </div>
     <!--FIM CONTEUDO 03-->
 
     <!--INICIO CONTEUDO 04-->
     <div class="row align-items-center justify-content-center">
-      <div class="col-md-8 text-center">
-        
-
-      </div>
+      <div class="col-md-8 text-center"></div>
     </div>
     <!--FIM CONTEUDO 04-->
-    
 
+    <!--INICIO CONTEUDO 05-->
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-8 text-center"></div>
+    </div>
+    <!--FIM CONTEUDO 05-->
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
-  </body> <!-- FIM TAG BODY-->
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <!-- FIM TAG BODY-->
 </html>
