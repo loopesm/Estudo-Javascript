@@ -1,4 +1,5 @@
 // variavel tipo string
+
 var texto = "Aqui tem um texto"
 
 // variavel tipo number
@@ -10,6 +11,8 @@ var numeroFrac = 1.2
 
 var teste1 = true
 var teste2 = false
+
+// Escrever variável no HTML
 
 document.write(texto,"<br>")
 document.write(numeroInt,"<br>")
