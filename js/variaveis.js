@@ -1,16 +1,16 @@
 // variavel tipo string
 
-var texto = "Aqui tem um texto";
+let texto = "Aqui tem um texto";
 
 // variavel tipo number
 
-var numeroInt = -7;
-var numeroFrac = 1.2;
+let numeroInt = -7;
+let numeroFrac = 1.2;
 
 // variavel tipo boolean
 
-var teste1 = true;
-var teste2 = false;
+let teste1 = true;
+let teste2 = false;
 
 // Escrever variável no HTML
 
@@ -19,3 +19,4 @@ document.write(numeroInt, "<br>");
 document.write(numeroFrac, "<br>");
 document.write(teste1, "<br>");
 document.write(teste2, "<br>");
+

@@ -90,15 +90,7 @@
     <!--INICIO CONTEUDO 02-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
-        <h2 class="meu-h2 mt-3">a</h2>
-      </div>
-    </div>
-    <!--FIM CONTEUDO 02-->
-
-    <!--INICIO CONTEUDO 03-->
-    <div class="row align-items-center justify-content-center">
-      <div class="col-md-8 text-center">
-        <h2 class="meu-h2 mt-3">Variáveis</h2>
+        <h2 class="meu-h2 mt-3">Variáveis e Constantes</h2>
 
         <p class="lead">As Variáveis armazenam determinadas informações.</p>
 
@@ -116,13 +108,13 @@
 
         <hr />
 
-        <p class="lead"><b>REGRAS DE NOMENCLATURA:</b></p>
-        <p class="lead m-0">Não iniciar com números, somente letras.</p>
-        <p class="lead m-0">Não pode contar caracteres especiais.</p>
-        <p class="lead m-0">
+        <p class="lead text-danger"><b>REGRAS DE NOMENCLATURA:</b></p>
+        <p class="lead m-0 text-danger">Não iniciar com números, somente letras.</p>
+        <p class="lead m-0 text-danger">Não pode contar caracteres especiais.</p>
+        <p class="lead m-0 text-danger">
           Não pode ser iguais as palavras reservadas da linguagem.
         </p>
-        <p class="lead">
+        <p class="lead text-danger">
           Há a diferencição de caracteres <b>Maiuscúlos</b> e
           <b>Minúsculos</b> nos nomes.
         </p>
@@ -130,11 +122,22 @@
         <hr />
 
         <p class="lead"><b>DECLARAÇÃO DE VARIÁVEL:</b></p>
+        <p class="lead">
+          Utiliza-se a instrução <b>"LET"</b> ( Mais indicado ).
+        </p>
         <p class="lead">Utiliza-se a instrução <b>"VAR"</b>.</p>
+
+        <p class="lead">A diferença entre as duas formas de declaração é 
+          que com <b>VAR</b> as variáveis podem sem redeclarada sem gerar erro
+          no código. Porém com <b>LET</b> isso não é possível.
+        </p>
+
+        <p class="lead"><b>DECLARAÇÃO DE CONSTANTES:</b></p>
+        <p class="lead">Utiliza-se a instrução <b>"CONST"</b>.</p>
 
         <hr />
 
-        <p class="lead"><b>VENDO O VALOR DE UMA VARIÁVEL:</b></p>
+        <p class="lead"><b>VENDO O VALOR DE UMA VARIÁVEL E CONSTANTE:</b></p>
         <p class="lead m-0"><b>alert()</b>: Abre uma janela com a mensagem.</p>
         <p class="lead m-0">
           <b>document.write()</b>: Escreve o valor da váriavel em um elemento
@@ -145,27 +148,79 @@
           navegador.
         </p>
 
-        <div class="w-50 d-inline-block bg-danger text-light">
+        <div class="w-50 mb-3 d-inline-block bg-danger text-light">
           <p class="lead"><b>Valores da Variáveis Atribuidas: </b></p>
           <script src="js/variaveis.js"></script>
         </div>
 
-        <hr />
+        <p class="lead">
+          Variáveis que não tem valor declarado tem um valor automaatico
+          atribuido como <b>"undefined"</b>, ou seja, não aponta para nenhum
+          local na memória.
+        </p>
+
+        <p class="lead">
+          Variáveis podem ter o valor definido pelo código como <b>"null"</b>, ou seja, não aponta para nenhum
+          local na memória. Isso é usado quando para a manipulação de dados. 
+        </p>
+
+        <p class="lead text-danger">
+          Não podemos declarar a mesma variável mais de uma vez no código.
+        </p>
+
+        <p class="lead text-danger">
+          Não podemos declarar uma variável sem usar <b>LET</b> ou <b>CONST</b>.
+        </p>
+
+        <hr>
+
+        <p class="lead"><b>FUNÇÃO PARA SABER O TIPO DA VARIÁVEL:</b> " typeof(variavel) "</p>
+
+        <hr>
+
+        <p class="lead"><b>EXERCÍCIO 01 - Variáveis e Constantes</b></p>
+
+        <div class="w-50 mb-3 d-inline-block bg-warning text-dark">
+          <script src="js/exercicio01.js"></script>
+        </div>
+        <p class="lead"><b>TEMPLATE DE STRINGS:</b> Declara uma String usando "${variavel}"</p>
+
+      </div>
+    </div>
+    <!--FIM CONTEUDO 02-->
+
+    <!--INICIO CONTEUDO 03-->
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2 class="meu-h2 mt-3">Operadores Aritiméticos</h2>
+
       </div>
     </div>
     <!--FIM CONTEUDO 03-->
 
     <!--INICIO CONTEUDO 04-->
     <div class="row align-items-center justify-content-center">
-      <div class="col-md-8 text-center"></div>
+      <div class="col-md-8 text-center">
+
+      </div>
     </div>
     <!--FIM CONTEUDO 04-->
 
     <!--INICIO CONTEUDO 05-->
     <div class="row align-items-center justify-content-center">
-      <div class="col-md-8 text-center"></div>
+      <div class="col-md-8 text-center">
+
+      </div>
     </div>
     <!--FIM CONTEUDO 05-->
+
+    <!--INICIO CONTEUDO 06-->
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-8 text-center">
+
+      </div>
+    </div>
+    <!--FIM CONTEUDO 06-->
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
