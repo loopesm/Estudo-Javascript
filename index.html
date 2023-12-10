@@ -109,8 +109,12 @@
         <hr />
 
         <p class="lead text-danger"><b>REGRAS DE NOMENCLATURA:</b></p>
-        <p class="lead m-0 text-danger">Não iniciar com números, somente letras.</p>
-        <p class="lead m-0 text-danger">Não pode contar caracteres especiais.</p>
+        <p class="lead m-0 text-danger">
+          Não iniciar com números, somente letras.
+        </p>
+        <p class="lead m-0 text-danger">
+          Não pode contar caracteres especiais.
+        </p>
         <p class="lead m-0 text-danger">
           Não pode ser iguais as palavras reservadas da linguagem.
         </p>
@@ -127,9 +131,10 @@
         </p>
         <p class="lead">Utiliza-se a instrução <b>"VAR"</b>.</p>
 
-        <p class="lead">A diferença entre as duas formas de declaração é 
-          que com <b>VAR</b> as variáveis podem sem redeclarada sem gerar erro
-          no código. Porém com <b>LET</b> isso não é possível.
+        <p class="lead">
+          A diferença entre as duas formas de declaração é que com <b>VAR</b> as
+          variáveis podem sem redeclarada sem gerar erro no código. Porém com
+          <b>LET</b> isso não é possível.
         </p>
 
         <p class="lead"><b>DECLARAÇÃO DE CONSTANTES:</b></p>
@@ -160,8 +165,9 @@
         </p>
 
         <p class="lead">
-          Variáveis podem ter o valor definido pelo código como <b>"null"</b>, ou seja, não aponta para nenhum
-          local na memória. Isso é usado quando para a manipulação de dados. 
+          Variáveis podem ter o valor definido pelo código como <b>"null"</b>,
+          ou seja, não aponta para nenhum local na memória. Isso é usado quando
+          para a manipulação de dados.
         </p>
 
         <p class="lead text-danger">
@@ -172,19 +178,23 @@
           Não podemos declarar uma variável sem usar <b>LET</b> ou <b>CONST</b>.
         </p>
 
-        <hr>
+        <hr />
 
-        <p class="lead"><b>FUNÇÃO PARA SABER O TIPO DA VARIÁVEL:</b> " typeof(variavel) "</p>
+        <p class="lead">
+          <b>FUNÇÃO PARA SABER O TIPO DA VARIÁVEL:</b> " typeof(variavel) "
+        </p>
 
-        <hr>
+        <hr />
 
         <p class="lead"><b>EXERCÍCIO 01 - Variáveis e Constantes</b></p>
 
         <div class="w-50 mb-3 d-inline-block bg-warning text-dark">
           <script src="js/exercicio01.js"></script>
         </div>
-        <p class="lead"><b>TEMPLATE DE STRINGS:</b> Declara uma String usando "${variavel}"</p>
-
+        <p class="lead">
+          <b>TEMPLATE DE STRINGS:</b> Declara uma String usando o sinal de
+          "crase" + "${variavel}"
+        </p>
       </div>
     </div>
     <!--FIM CONTEUDO 02-->
@@ -194,6 +204,56 @@
       <div class="col-md-8 text-center">
         <h2 class="meu-h2 mt-3">Operadores Aritiméticos</h2>
 
+        <p class="lead"><b>PRINCIPAIS OPERADORES:</b></p>
+
+        <div class="d-inline-block mb-3 w-75 bg-info text-light">
+          <ul style="list-style: none">
+            <li class="text-center">
+              <p class="lead"><b>Sinal de Adição ( + )</b></p>
+            </li>
+            <li class="text-center">
+              <p class="lead m-0"><b>Sinal de Incremento ( ++ )</b></p>
+              <p class="lead">Pré atribuido ou Pós Atribuido</p>
+            </li>
+            <li class="text-center">
+              <p class="lead m-0"><b>Sinal de Decremento ( -- )</b></p>
+              <p class="lead">Pré atribuido ou Pós Atribuido</p>
+            </li>
+            <li class="text-center">
+              <p class="lead"><b>Sinal de Subtração ( - )</b></p>
+            </li>
+            <li class="text-center">
+              <p class="lead"><b>Sinal de Multiplicação ( * )</b></p>
+            </li>
+            <li class="text-center">
+              <p class="lead"><b>Sinal de Potência ( ** )</b></p>
+            </li>
+            <li class="text-center">
+              <p class="lead"><b>Sinal de Divisão ( / )</b></p>
+            </li>
+            <li class="text-center">
+              <p class="lead"><b>Sinal de Resto da Divisão ( % )</b></p>
+            </li>
+            <hr />
+            <li class="text-center">
+              <p class="lead"><b>Sinal de Concatenação de Textos ( + )</b></p>
+            </li>
+          </ul>
+        </div>
+
+        <p class="lead">
+          <b>PRECEDÊNCIA DOS OPERADORES:</b> A ordem de execução dos operadores
+          é igual ao realizado na matemática.
+        </p>
+
+        <hr />
+
+        <p class="lead"><b>CONVERÇÃO DE STRING:</b></p>
+        <p class="lead"><b>Maneira 1:</b> Função " parseInt("string") "</p>
+        <p class="lead"><b>Maneira 2:</b> Função " parseFloat("string") "</p>
+        <p class="lead"><b>Maneira 3:</b> Função " Number("string") "</p>
+
+        <hr />
       </div>
     </div>
     <!--FIM CONTEUDO 03-->
@@ -201,6 +261,25 @@
     <!--INICIO CONTEUDO 04-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
+        <h2 class="meu-h2">Funções do Navegador</h2>
+
+        <p class="lead text-danger">
+          <b>OBS.:</b> Todas as Funções podem ou não retornar um valor para o
+          sistema. Caso elas não retornem valor, será atribuido automaticamente
+          o valor "undefined".
+        </p>
+
+        <p class="lead">
+          <b>Função "alert()":</b> Emite um alerta simples no navegador.
+        </p>
+        <p class="lead">
+          <b>Função "confirm()":</b> Emite um alerta no navegador onde retorna o
+          valor FALSE ou TRUE.
+        </p>
+        <p class="lead">
+          <b>Função "prompt()":</b> Emite um alerta no navegador solicitando
+          usuário que digite um valor, o qual vai ser atribuido a Função.
+        </p>
 
       </div>
     </div>
@@ -209,6 +288,33 @@
     <!--INICIO CONTEUDO 05-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
+        <h2 class="meu-h2">Strings</h2>
+
+        <p class="lead">Podemos usar a barra invertida (\) para escrever String "Especiais"</p>
+
+        <hr>
+
+        <p class="lead"><b>INDICE DE UMA STRING</b></p>
+
+        <p class="lead">As Strings tem indices, ou seja, cada letra tem um indice
+        o qaul recebe um valor e esse valor sempre começa em 0;</p>
+
+        <p class="lead m-0 text-danger"><b>Exemplo string:</b> nome = "Moises"</p>
+        <p class="lead text-danger">Função = <b>console.log(nome,[0])</b> "vai retornar somente "M".</p>
+
+        <hr>
+
+        <p class="lead"><b>BUSCAR INDICE DE UMA STRING</b></p>
+        
+        <p class="lead m-0 text-danger"><b>Exemplo 1 String:</b> nome = "Moises Lopes"</p>
+        <p class="lead text-danger">Função = <b>console.log(nome.indexOf("Lopes"))</b> vai retornar o indice onde inicia a palavra "Lopes".</p>
+
+        <p class="lead m-0 text-danger"><b>Exemplo 2 String:</b> nome = "Moises Lopes"</p>
+        <p class="lead text-danger">Função = <b>console.log(nome.indexOf("Lopes", 2))</b> vai retornar o indice onde inicia a palavra "Lopes" a partir do indice 2.</p>
+
+        <p class="lead m-0 text-danger"><b>Exemplo 3 String:</b> nome = "Moises"</p>
+        <p class="lead text-danger">Função = <b>console.log(nome.lastIndexOf("M"))</b> vai retornar o indice onde está "M" a partir do ultimo indice.</p>
+        
 
       </div>
     </div>
@@ -216,12 +322,30 @@
 
     <!--INICIO CONTEUDO 06-->
     <div class="row align-items-center justify-content-center">
-      <div class="col-md-8 text-center">
-
-      </div>
+      <div class="col-md-8 text-center"></div>
     </div>
     <!--FIM CONTEUDO 06-->
 
+    <!--INICIO CONTEUDO 07-->
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-8 text-center"></div>
+    </div>
+    <!--FIM CONTEUDO 07-->
+
+    <!--INICIO CONTEUDO 08-->
+    <div class="row align-items-center justify-content-center">
+    <div class="col-md-8 text-center"></div>
+    </div>
+    <!--FIM CONTEUDO 08-->
+
+      <!--INICIO CONTEUDO 09-->
+    <div class="row align-items-center justify-content-center">
+    <div class="col-md-8 text-center"></div>
+    </div>
+    <!--FIM CONTEUDO 09-->
+
+
+    <br><br><br><br><br>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script
