@@ -96,7 +96,7 @@
 
         <hr />
 
-        <p class="lead"><b>TIPOS DE VARIÁVEIS:</b></p>
+        <p class="lead"><b>TIPOS DE DADOS PRIMITIVOS  ( VALORES IMUTÁVEIS = Não mudam ):</b></p>
         <p class="lead m-0"><b>String:</b> Armazenamento de Textos.</p>
         <p class="lead m-0">
           <b>Number:</b> Valores numéricos inteiros ou fracionados, positivos e
@@ -105,6 +105,19 @@
         <p class="lead">
           <b>Boolean:</b> Armazenam estados, como TRUE ou FALSE.
         </p>
+        <p class="lead">
+          <b>Undefined:</b> Não definido na memória ( Sem valor ).
+        </p>
+        <p class="lead">
+          <b>NULL (bigint,symbol)</b> Especificado como sem valor na memória ( Sem valor ).
+        </p>
+
+        <hr>
+
+        <p class="lead"><b>TIPOS DE DADOS POR REFERÊNCIA  ( VALORES MUTÁVEIS = Alteram seu valor ):</b></p>
+        <p class="lead m-0"><b>Array:</b> Armazena Lista de Dados. </p>
+        <p class="lead m-0"><b>Objetos:</b> Armazena Dados. </p>
+        <p class="lead m-0"><b>Function:</b> Executa Ações. </p>
 
         <hr />
 
@@ -411,6 +424,8 @@
         <p class="lead"><b>Potência:</b> " Math.pow(2,10) " é igual a 2 elevado a 10.</p>
         <p class="lead"><b>Arredondamento automatico:</b> " Math.round(num1) "</p>
 
+        <hr>
+
       </div>
     </div>
     <!--FIM CONTEUDO 06-->
@@ -421,21 +436,199 @@
         
         <h2 class="meu-h2">Arrays</h2>
 
+        <p class="lead">Arrays são listas de coisas ( Nomes, Numeros, Obejtos, e etc )</p>
+
+        <hr>
+
+        <p  class="lead"><b>ACESSAR INDICE DE UM ARRAY</b></p>
+
+        <p class="lead text-danger">" console.log(array[0]) "</p>
+
+        <p  class="lead"><b>TAMANHO DE UM ARRAY</b></p>
+
+        <p class="lead text-danger">" console.log(array.length) "</p>
+
+        <p  class="lead"><b>ADICIONANDO ITEM NO FINAL DO ARRAY</b></p>
+
+        <p class="lead text-danger">" array.push("Objeto") "</p>
+
+        <p  class="lead"><b>ADICIONANDO ITEM NO INICIO DO ARRAY</b></p>
+
+        <p class="lead text-danger">" array.unshift("Objeto") "</p>
+
+        <p  class="lead"><b>REMOVENDO ITEM DO FINAL DO ARRAY</b></p>
+
+        <p class="lead text-danger">" array.pop() "</p>
+
+        <p  class="lead"><b>REMOVENDO ITEM DO INICIO DO ARRAY</b></p>
+
+        <p class="lead text-danger">" array.shift() "</p>
+
+        <p  class="lead"><b>DELETANDO ITEM DO ARRAY</b></p>
+
+        <p class="lead m-0 text-danger">" delete array[0] "</p>
+        <p class="lead"> Desta forma, o valor do indice que teve um item excluido, fica com valor de "vazio".</p>
+
+        <p  class="lead"><b>PEGAR UM RANGE NO ARRAY</b></p>
+
+        <p class="lead m-0 text-danger">" array.slice(1,2) "</p>
+        <p class="lead">Desta forma, retornar os valores do indice 1 até o 2.</p>
+
+        <p class="lead m-0 text-danger">" array.slice(1, -1) "</p>
+        <p class="lead">Desta forma, retornar os valores do indice 1 até o penultimo item do array.</p>
+
+        <p  class="lead"><b>VERIFICANDO SE O OBJETO É ARRAY</b></p>
+
+        <p class="lead text-danger">" array instanceof Array "</p>
+        <p class="lead">Retorna TRUE se for um Array, e FALSE caso não seja.</p>
+
+        <p  class="lead"><b>REMOVENDO ITEM DO INICIO DO ARRAY</b></p>
+
+        <p class="lead text-danger">" array.shift() "</p>
+
+        <hr>
+
+        <p class="lead"><b>OBS.:</b> Podemos usar CONST para definir Arrays, pois o que alterado
+        são seus valores internos e não a constante "Array".</p>
+
       </div>
     </div>
     <!--FIM CONTEUDO 07-->
 
     <!--INICIO CONTEUDO 08-->
     <div class="row align-items-center justify-content-center">
-    <div class="col-md-8 text-center"></div>
+    <div class="col-md-8 text-center">
+
+      <h2 class="meu-h2">Funções</h2>
+
+      <p class="lead">Funções executam ações dentro do código.</p>
+
+      <p class="lead text-danger">A nomenclatura para as funções segue a mesma
+        regra de nomenclatura das variáveis.
+      </p>
+
+      <hr>
+
+      <p class="lead"><b>DECLATANDO UMA FUNÇÃO</b></p>
+
+      <p class="lead text-danger">" function nomeFunção ( valores de Input ) { o que a função vai fazer } "</p>
+
+      <p class="lead"><b>RETORNANDO UM VALOR COM A FUNÇÃO</b></p>
+
+      <p class="lead text-danger">" function nomeFunção ( varDeInput ) { return "varDeInput" } "</p>
+
+      <p class="lead"><b>EXEMPLOS DE FUNÇÃO</b></p>
+
+      <p class="lead m-0"> Declaração de Função Padrão</p>
+      <div class="d-inline-block w-50 bg-dark">
+        <code>
+            function soma(x,y) {<br>
+              const resultado = x + y;<br>
+              return resultado;
+            }
+        </code>
+      </div>
+      <hr>
+      <p class="lead m-0"> Declaração de Função dentro de uma CONST</p>
+      <div class="d-inline-block w-50 bg-dark">
+        <code>
+            const raiz = function soma(n) {<br>
+              return n ** 0.5;
+            };
+        </code>
+      </div>
+      <hr>
+      <p class="lead m-0"> Declaração de Função Arow</p>
+      <div class="d-inline-block w-50 bg-dark">
+        <code>
+            const raiz = (n) => n ** 0.5
+        </code>
+      </div>
+
+      <hr>
+
+    </div>
     </div>
     <!--FIM CONTEUDO 08-->
 
-      <!--INICIO CONTEUDO 09-->
+    <!--INICIO CONTEUDO 09-->
     <div class="row align-items-center justify-content-center">
-    <div class="col-md-8 text-center"></div>
+    <div class="col-md-8 text-center">
+
+      <h2 class="meu-h2">Objetos</h2>
+
+      <p class="lead">São grupos de dados que são relacionados entre si.</p>
+
+      <p class="lead m-0"> Declaração de Objeto</p>
+      <div class="d-inline-block w-50 bg-dark">
+        <code>
+            const objetoPessoa1 = { <br>
+              nome: 'Moises', <br>
+              sobrenome: 'Lopes', <br>
+              idade: 55
+            }
+        </code>
+      </div>
+      <br><br>
+      <div class="d-inline-block w-50 bg-dark">
+        <code>
+            const objetoPessoa2 = { <br>
+              nome: 'Nome', <br>
+              sobrenome: 'Sobrenome', <br>
+              idade: 99
+            }
+        </code>
+      </div>
+      <hr>
+      <p class="lead m-0">Função que Cria Objetos</p>
+      <div class="d-inline-block w-75 bg-dark">
+        <code>
+          function criaPessoa (nome, sobrenome, idade) { <br>
+            return { <br>
+              nome: nome, <br>
+              sobrenome: sobrenome, <br>
+              idade: idade <br>
+            } <br>
+          } <br>
+
+          const pessoa1 = criaPessoa ('Moises', 'Lopes', 26)
+        </code>
+      </div>
+
+      <hr>
+    </div>
     </div>
     <!--FIM CONTEUDO 09-->
+
+    <!--INICIO CONTEUDO 10-->
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-8 text-center">
+  
+        <h2 class="meu-h2">10</h2>
+  
+      </div>
+      </div>
+      <!--FIM CONTEUDO 10-->
+
+      <!--INICIO CONTEUDO 11-->
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-8 text-center">
+  
+        <h2 class="meu-h2">11</h2>
+  
+      </div>
+      </div>
+      <!--FIM CONTEUDO 11-->
+
+      <!--INICIO CONTEUDO 12-->
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-8 text-center">
+  
+        <h2 class="meu-h2">12</h2>
+  
+      </div>
+      </div>
+      <!--FIM CONTEUDO 12-->
 
 
     <br><br><br><br><br>
