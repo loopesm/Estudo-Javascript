@@ -147,8 +147,18 @@
         <p class="lead">
           A diferença entre as duas formas de declaração é que com <b>VAR</b> as
           variáveis podem sem redeclarada sem gerar erro no código. Porém com
-          <b>LET</b> isso não é possível.
+          <b>LET</b> isso não é possível, pois a variavel é declarada apenas uma unica vez.
         </p>
+
+        <p class="lead">
+          A variavel <b>LET</b> tem escopo de bloco, ou seja, todo o código usado entre "{}".
+        </p>
+
+        <p class="lead">
+          A variavel <b>LET</b> não pode ser usada antes de ser definida, mas com <b>VAR</b> podemos, e ele retorna undefined, caso tenha sido atribuido um valor após ela ter sido usada.
+        </p>
+
+        <hr>
 
         <p class="lead"><b>DECLARAÇÃO DE CONSTANTES:</b></p>
         <p class="lead">Utiliza-se a instrução <b>"CONST"</b>.</p>
@@ -511,10 +521,16 @@
 
         <p class="lead text-danger">" array.shift() "</p>
 
+        <p  class="lead"><b>PEGAR O "RESTO" DE UM ARRAY</b></p>
+
+        <p class="lead m-0 text-danger">[..."rest"] e [... "spread"]</p>
+
         <hr>
 
         <p class="lead"><b>OBS.:</b> Podemos usar CONST para definir Arrays, pois o que alterado
         são seus valores internos e não a constante "Array".</p>
+
+        <hr>
 
       </div>
     </div>
@@ -754,9 +770,6 @@
           </ul>
         </div>
 
-
-
-        
       </div>
       </div>
       <!--FIM CONTEUDO 10-->
@@ -765,21 +778,114 @@
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
   
-        <h2 class="meu-h2">11</h2>
-  
+        <h2 class="meu-h2">Estrutura de Repetição</h2>
+
+        <p class="lead"><b>FOR (CLÁSSICO)</b></p>
+
+        <div class="d-inline-block mb-3 w-75 bg-info text-light">
+          <ul style="list-style: none">
+            <li class="text-center">
+              <p class="lead m-0"><b>FOR ( LET i = 0 ; i <= 5 ; i++ ) { CÓDIGO QUE SERÁ REPETIDO }</b></p>
+              <p class="lead">O laço se encerra quando a condição se tornar FALSE</p>
+              <p class="lead">Usado com Elementos Iteráveis ( Array ou String )</p>
+            </li>
+          </ul>
+        </div>
+
+        <p class="lead"><b>FOR IN</b></p>
+
+        <div class="d-inline-block mb-3 w-75 bg-info text-light">
+          <ul style="list-style: none">
+            <li class="text-center">
+              <p class="lead m-0"><b>FOR ( LET i IN ARRAY ) { CÓDIGO QUE SERÁ REPETIDO }</b></p>
+              <p class="lead">Percorre os indices do Array</p>
+              <p class="lead">Usado com Elementos Não Iteráveis ( Array, String ou Objetos )</p>
+            </li>
+          </ul>
+        </div>
+
+        <p class="lead"><b>FOR OF</b></p>
+
+        <div class="d-inline-block mb-3 w-75 bg-info text-light">
+          <ul style="list-style: none">
+            <li class="text-center">
+              <p class="lead m-0"><b>FOR ( LET i OF ARRAY) { CÓDIGO QUE SERÁ REPETIDO }</b></p>
+              <p class="lead">Retorna o valor de cada indice do Array</p>
+              <p class="lead">Usado com Elementos Iteráveis ( Array ou String )</p>
+            </li>
+          </ul>
+        </div>
+
+        <p class="lead"><b>FOREACH</b></p>
+
+        <div class="d-inline-block mb-3 w-75 bg-info text-light">
+          <ul style="list-style: none">
+            <li class="text-center">
+              <p class="lead m-0"><b> ARRAY.forEach ( function ( valor, indice) { CÓDIGO QUE SERÁ REPETIDO } )</b></p>
+              <p class="lead">Retorna Indice e Valor do Array</p>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+
+
+
       </div>
-      </div>
+    </div>
       <!--FIM CONTEUDO 11-->
 
       <!--INICIO CONTEUDO 12-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
   
-        <h2 class="meu-h2">12</h2>
+        <h2 class="meu-h2">DOM - Arvore do DOM</h2>
+
+        <p class="lead">DOM = Document Object Model</p>
+
+        <p class="lead">Se trata da interface de manipulação de elementos HTML</p>
+
+        <p class="lead bg-info">window = Pai de todos os Elementos da Página</p>
+        <p class="lead bg-info">document = Pai do Elemento HTML</p>
+
+        <p class="lead"><b>CRIA UM ELEMENTO</b> = document.creatElement(ELEMENTO)</p>
+        <p class="lead"><b>DEFINE O PAI DO ELEMENTO CRIADO</b> = elementoPai.appendChild(ELEMENTO)</p>
   
       </div>
       </div>
       <!--FIM CONTEUDO 12-->
+
+      <!--INICIO CONTEUDO 13-->
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-8 text-center">
+  
+        <h2 class="meu-h2">13</h2>
+  
+      </div>
+      </div>
+      <!--FIM CONTEUDO 13-->
+
+      <!--INICIO CONTEUDO 14-->
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-8 text-center">
+  
+        <h2 class="meu-h2">14</h2>
+  
+      </div>
+      </div>
+      <!--FIM CONTEUDO 14-->
+
+      <!--INICIO CONTEUDO 15-->
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-8 text-center">
+  
+        <h2 class="meu-h2">15</h2>
+  
+      </div>
+      </div>
+      <!--FIM CONTEUDO 15-->
 
 
     <br><br><br><br><br>
