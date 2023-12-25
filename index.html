@@ -565,7 +565,7 @@
 
       <p class="lead"><b>EXEMPLOS DE FUNÇÃO</b></p>
 
-      <p class="lead m-0"> Declaração de Função Padrão</p>
+      <p class="lead m-0"> Declaração de Função Padrão ( Function Hoisting )</p>
       <div class="d-inline-block w-50 bg-dark">
         <code>
             function soma(x,y) {<br>
@@ -575,7 +575,7 @@
         </code>
       </div>
       <hr>
-      <p class="lead m-0"> Declaração de Função dentro de uma CONST</p>
+      <p class="lead m-0"> Declaração de Função dentro de uma CONST ( Function Expression ) </p>
       <div class="d-inline-block w-50 bg-dark">
         <code>
             const raiz = function soma(n) {<br>
@@ -584,13 +584,22 @@
         </code>
       </div>
       <hr>
-      <p class="lead m-0"> Declaração de Função Arow</p>
+      <p class="lead m-0"> Declaração de Função Arrow</p>
       <div class="d-inline-block w-50 bg-dark">
         <code>
             const raiz = (n) => n ** 0.5
         </code>
       </div>
+      <hr>
 
+      <p class="lead"><b>PARÂMETROS DA FUNÇÃO</b></p>
+
+      <p class="lead m-0">Retorna todos os parametros(argumentos) da função dentro de um objeto.</p>
+      <div class="d-inline-block w-50 bg-dark">
+        <code>
+            console.log(arguments)
+        </code>
+      </div>
       <hr>
 
     </div>
