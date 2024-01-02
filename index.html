@@ -555,7 +555,7 @@
 
       <hr>
 
-      <p class="lead"><b>DECLATANDO UMA FUNÇÃO</b></p>
+      <p class="lead"><b>DECLARANDO UMA FUNÇÃO</b></p>
 
       <p class="lead text-danger">" function nomeFunção ( valores de Input ) { o que a função vai fazer } "</p>
 
@@ -615,12 +615,48 @@
 
       <p class="lead"><b>FUNÇÕES FÁBRICA ( FACTORY FUNCTIONS )</b></p>
 
-      <p class="lead m-0">Também chamadas de "Auto Invocadas" </p>
+      <p class="lead m-0"> Retorna objetos ( fabrica objetos, molde para gerar objetos ) </p>
+      <div class="d-inline-block w-75 bg-dark">
+        <code>
+            function criaPessoa(nome, sobrenome){ <br>
+              return { <br>
+                nome, <br>
+                sobrenome, <br> 
+                fala: function(assunto){ <br>
+                  return `${this.nome} está falando sobre ${assunto}` <br>
+                } <br>
+              } <br>
+            } <br>
+            <br>
+            const pessoa1 = new Pessoa ('Moises','Lopes')
+        </code>
+      </div>
+
+      <hr>
+
+      <p class="lead"><b>FUNÇÕES CONSTRUTORAS ( CONSTRUCTOR FUNCTIONS )</b></p>
+
+      <p class="lead m-0"> Retorna objetos ( cria objetos, molde para gerar objetos ) </p>
+      <div class="d-inline-block w-75 bg-dark">
+        <code>
+            function Pessoa(nome, sobrenome){ <br>
+             this.nome = nome; <br>
+             this.sobrenome = sobrenome;<br> 
+             this.metodo = function(){<br>
+              "Função que o método vai receber"<br>
+             } <br>
+            } <br>
+            <br>
+            const pessoa1 = new Pessoa ('Moises','Lopes')
+        </code>
+      </div>
+
       <hr>
 
 
     </div>
     </div>
+
     <!--FIM CONTEUDO 08-->
 
     <!--INICIO CONTEUDO 09-->
