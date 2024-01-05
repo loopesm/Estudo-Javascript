@@ -345,7 +345,7 @@
         <p class="lead m-0 text-danger"><b>Exemplo 3 String:</b> nome = "Moises"</p>
         <p class="lead text-danger">Função = <b>console.log(nome.lastIndexOf("M"))</b> vai retornar o indice onde está "M" a partir do ultimo indice.</p>
         
-        <p class="lead"><b>PRESSÕES REGULARES DE UMA STRING</b></p>
+        <p class="lead"><b>EXPRESSÕES REGULARES DE UMA STRING</b></p>
 
         <p class="lead m-0 text-danger"><b>Exemplo 3 String:</b> nome = "Moises"</p>
         <p class="lead text-danger">Função = <b>console.log(nome.match(/[a-z]/g))</b> Retorna todas as letras Minusculas da String .</p>
@@ -377,6 +377,9 @@
 
         <p class="lead m-0 text-danger"><b>Exemplo 3 String:</b> nome = "Moises Evangelista Lopes"</p>
         <p class="lead text-danger">Função = <b>console.log(nome.toLowerCase())</b> Retorna a String com todos os caracteres maiusculos.</p>
+
+        <p class="lead"><b>ULTIMA LETRA DE UMA STRING</b></p>
+        <p class="lead text-danger">Função = <b>console.log(nome.toLowerCase().endsWith("Letra"))</b> Retorna a String que termina com os caracteres no Parênteses..</p>
 
       </div>
     </div>
@@ -517,6 +520,13 @@
         <p class="lead m-0 text-danger">" array.slice(1, -1) "</p>
         <p class="lead">Desta forma, retornar os valores do indice 1 até o penultimo item do array.</p>
 
+        <p  class="lead"><b>UNINDO TODOS OS ITENS DO ARRAY</b></p>
+
+        <p class="lead text-danger">" array.join(" ") "</p>
+        <p class="lead">O item que colocamos dentro do parênteses, é usado como separador dos elementos que serão unidos,
+          no exemplo usamos um espaço, mas poderia ser vírgula e etc.
+        </p>
+
         <p  class="lead"><b>VERIFICANDO SE O OBJETO É ARRAY</b></p>
 
         <p class="lead text-danger">" array instanceof Array "</p>
@@ -532,8 +542,54 @@
 
         <hr>
 
-        <p class="lead"><b>OBS.:</b> Podemos usar CONST para definir Arrays, pois o que alterado
+        <p class="lead"><b>OBS.:</b> Podemos usar CONST para definir Arrays, pois o que é alterado
         são seus valores internos e não a constante "Array".</p>
+
+        <hr>
+
+        <p  class="lead"><b>MÉTODO "SPLICE" EM ARRAYS </b></p>
+
+        <p class="lead text-danger">" array.splice("indice atual","delete","elem1","elem2","elem3") "</p>
+
+        <p class="lead m-0"><b>Simulando POP ( Remover o ultimo elemento )</b></p>
+        <p class="lead m-0 text-danger">" array.splice(-1, 1) "</p>
+        <p class="lead text-danger">" array.splice(-1, Number.MAX_VALUE) "</p>
+
+        <p class="lead m-0"><b>Simulando SHIFT ( Remover o primeiro elemento )</b></p>
+        <p class="lead text-danger">" array.splice(0, 1) "</p>
+
+        <p class="lead m-0"><b>Simulando PUSH ( Adicionando um elemento ao final do Array )</b></p>
+        <p class="lead text-danger">" array.splice(array.length , 0, "Elemento a ser adicionado", ...) "</p>
+
+        <p class="lead m-0"><b>Simulando UNSHIFT ( Adicionando um elemento ao começo do Array )</b></p>
+        <p class="lead text-danger">" array.splice(0, 0, "Elemento a ser adicionado", ...) "</p>
+
+        <hr>
+
+        <p  class="lead"><b>CONCATENANDO ARRAYS </b></p>
+
+        <p class="lead text-danger"> "const array3 = array1.concat(array2)" </p>
+        <p class="lead text-danger"> "const array3 = [...array1, ...arra2]" </p>
+
+        <hr>
+
+        <p  class="lead"><b>"FILTER" - FILTRANDO ARRAY </b></p>
+
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+
+            const numerosFiltrados = arrayNumeros.filter(callbackFilter); <br>
+            <br>
+            function callbackFilter (valorElemento, indiceAtual, arrayCompleto) { <br>
+              return valor > 10; <br>
+            } <br>
+
+            console.log(numerosFiltrados);
+            
+          </code>
+          
+        </div>
+
 
         <hr>
 
@@ -653,6 +709,50 @@
 
       <hr>
 
+      <p class="lead"><b>FUNÇÕES RECURSIVAS</b></p>
+
+      <p class="lead m-0">Uma função que chama ela mesmo ( Como se fosse uma estrutura de repetição ).</p>
+      <div class="d-inline-block w-75 bg-dark">
+        <code>
+            function recursiva(max){ <br>
+              if ( max > 10 ) return; <br>
+              max++; <br>
+              console.log(max); <br>
+              recursiva(max); <br>
+            } <br>
+
+            recursiva(-10);
+        </code>
+      </div>
+      <p class="lead"><b>OBS.:</b> Possui um limite de 1000 repetições.</p>
+
+      <hr>
+
+      <p class="lead"><b>FUNÇÕES GERADORAS</b></p>
+
+      <p class="lead m-0"> Funciona como um contador com pausas, cada vez que é chamado o 
+        comando "next().value", ela entrega o valor do objeto gerado.
+      </p>
+
+      <div class="d-inline-block w-75 bg-dark">
+        <code>
+            function* geradora1(){ <br>
+              let i = 0; <br>
+
+              while(true){ <br>
+                yield i; <br>
+                i++ <br>
+              } <br>
+            } <br>
+
+            const geradora1 = geradora1(); <br>
+
+            console.log(geradora2.next().value);
+        </code>
+      </div>
+
+      <hr>
+      
 
     </div>
     </div>
