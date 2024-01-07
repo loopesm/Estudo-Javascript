@@ -1253,6 +1253,14 @@
         </div>
         <hr />
 
+        <p class="lead"><b>Cria um Objeto</b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const pessoa1 = Object.create( {'chaves do objeto'} )
+          </code>
+        </div>
+        <hr />
+
         <p class="lead"><b>Copiando Objetos</b></p>
         <div class="d-inline-block w-75 bg-dark">
           <code>
@@ -1310,6 +1318,65 @@
             console.log(pessoa1) <br>
             consloe.log(pessoa2)
           </code>
+        </div>
+        <hr />
+
+        <p class="lead"><b>Manipulando Prototypes
+        </b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const objA = { <br>
+              chaveA: 'A' <br>
+            } <br>
+
+            const objB = { <br>
+              chaveB: 'B' <br>
+            } <br>
+
+            Object.setPrototypeOf(objB, objA); <br>
+            // Agora o objeto B está dentro de A ( B é filho de A ). <br>
+            console.log(objB.chaveA);
+          </code>
+        </div>
+        <hr />
+
+        <p class="lead m-0">HERANÇA EM OBJETOS</p>
+
+        <p class="lead"><b></b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            //FUNÇÃO CONSTRUTORA <br>
+            function Produto(nome, preco){ <br>
+              this.nome = nome; <br>
+              this.preço = preco; <br>
+            } <br>
+
+            function Camiseta(nome, preco, cor){ <br>
+              Produto.call(this, nome, preço); <br>
+              this.cor = cor; <br>
+            } <br>
+            <br>
+            // MÉTODOS PROTOTYPES <br>
+            Produto.prototype.aumento = function(valor){ <br>
+              this.preco += valor; <br>
+            } <br>
+            Produto.prototype.desconto = function(valor){ <br>
+              this.preco -= valor; <br>
+            } <br>
+
+            Camiseta.prototype = Object.create(Produto.prototype); <br>
+            Camiseta.prototype.constructor = Camiseta; <br>
+            <br>
+            // CRIANDO OBJETOS <br>
+            const produto1 = new Produto ('Generico', 100) <br>
+            const camiseta1 = new Camiseta ('Regata', 50, 'Preta') <br>
+            <br>
+            // EXIBINDO OS OBJETOS <br>
+            console.log(produto1) <br>
+            console.log(camiseta1) <br>
+
+
+
         </div>
         <hr />
 
