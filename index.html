@@ -589,8 +589,67 @@
           </code>
           
         </div>
+        <hr>
 
+        <p  class="lead"><b>"MAP" - MAPEANDO ARRAY </b></p>
 
+        <p class="lead"> Usa o Array original e cria um novo array que pode ser alterado os valores originais ou não. </p>
+
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+
+            const numerosMap = arrayNumeros.map(callbackFilter); <br>
+            <br>
+            function callbackFilter (valorElemento, indiceAtual, arrayCompleto) { <br>
+              return valor * 2 ; <br>
+            } <br>
+
+            console.log(numerosMap);
+            
+          </code>
+          
+        </div>
+        <hr>
+
+        <p  class="lead"><b>"REDUCE" - REDUZINDO ARRAY </b></p>
+
+        <p class="lead"> Usada para reduzir o Array à um unico elemento. </p>
+
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+
+            const numerosMap = arrayNumeros.map(callbackFilter, "valor inicial acumulador"); <br>
+            <br>
+            function callbackFilter (acumulador, valorElemento, indiceAtual, arrayCompleto) { <br>
+              return valor * 2 ; <br>
+            } <br>
+
+            console.log(numerosMap);
+            
+          </code>
+          
+        </div>
+        <hr>
+
+        <p  class="lead"><b>FILTER + MAP + REDUCE </b></p>
+
+        <p class="lead"> Unindo os três métodos </p>
+
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+
+            const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
+
+            const numerosPares = numeros
+              .filter(valor => valor % 2 === 0)
+              .map(valor => valor * 2 )
+              .reduce((acumulador, valor) => acumulador + valor );
+
+            consol.log(numerosPares);
+            
+          </code>
+          
+        </div>
         <hr>
 
       </div>
@@ -985,10 +1044,12 @@
 
         <p class="lead"><b>FOREACH</b></p>
 
+        <p class="lead"><b>OBS.: Somente disponível em Arrays</b></p>
+
         <div class="d-inline-block mb-3 w-75 bg-info text-light">
           <ul style="list-style: none">
             <li class="text-center">
-              <p class="lead m-0"><b> ARRAY.forEach ( function ( valor, indice) { CÓDIGO QUE SERÁ REPETIDO } )</b></p>
+              <p class="lead m-0"><b> ARRAY.forEach ( function ( valor, indice, array ) { CÓDIGO QUE SERÁ REPETIDO } )</b></p>
               <p class="lead">Retorna Indice e Valor do Array</p>
             </li>
           </ul>
