@@ -827,7 +827,7 @@
       <p class="lead">São grupos de dados que são relacionados entre si.</p>
 
       <p class="lead m-0"> Declaração de Objeto</p>
-      <div class="d-inline-block w-50 bg-dark">
+      <div class="d-inline-block w-75 bg-dark">
         <code>
             const objetoPessoa1 = { <br>
               nome: 'Moises', <br>
@@ -837,7 +837,7 @@
         </code>
       </div>
       <br><br>
-      <div class="d-inline-block w-50 bg-dark">
+      <div class="d-inline-block w-75 bg-dark">
         <code>
             const objetoPessoa2 = { <br>
               nome: 'Nome', <br>
@@ -847,7 +847,55 @@
         </code>
       </div>
       <hr>
-      <p class="lead m-0">Função que Cria Objetos</p>
+
+      <p class="lead m-0">ACESSANDO VALORES DOS OBJETOS</p>
+      <div class="d-inline-block w-75 bg-dark">
+        <code>
+            const objetoPessoa1 = { <br>
+              nome: 'Moises', <br>
+              sobrenome: 'Lopes', <br>
+              idade: 55 <br>
+            } <br>
+
+            console.log(objetoPessoa1.nome) // QUANDO SABEMOS A CHAVE <br>
+            <br>
+            const chaveDinâmica = 'nome' <br>
+            console.log(objetoPessoa1[chaveDinâmica]) // VALORES DINÂMICOS <br>
+
+        </code>
+      </div>
+      <hr>
+
+      <p class="lead m-0">CRIANDO OBJETOS</p>
+      <p class="lead"><b>Forma Literal</b></p>
+      <div class="d-inline-block w-75 bg-dark">
+        <code>
+            const objetoPessoa1 = { <br>
+              nome: 'Moises', <br>
+              sobrenome: 'Lopes', <br>
+              idade: 26
+            }
+        </code>
+      </div>
+      <hr>
+
+      <p class="lead"><b>Forma Construtora</b></p>
+      <div class="d-inline-block w-75 bg-dark">
+        <code>
+          const pessoa1 = new Object(); <br>
+          pessoa1.nome = 'Moises'; <br>
+          pessoa1.sobrenome = 'Lopes' <br>
+          pessoa1.idade = 26; <br>
+
+          console.log(pessoa1.nome);
+          console.log(pessoa1.sobrenome);
+          console.log(pessoa1.idade);
+
+        </code>
+      </div>
+      <hr>
+
+      <p class="lead"><b>Forma Usando Funções</b></p>
       <div class="d-inline-block w-75 bg-dark">
         <code>
           function criaPessoa (nome, sobrenome, idade) { <br>
@@ -861,8 +909,140 @@
           const pessoa1 = criaPessoa ('Moises', 'Lopes', 26)
         </code>
       </div>
-
       <hr>
+
+      <p class="lead m-0">MANIPULANDO OBJETOS</p>
+
+      <p class="lead"><b>Apagando chaves dos objetos</b></p>
+      <div class="d-inline-block w-75 bg-dark">
+        <code>
+            const objetoPessoa1 = { <br>
+              nome: 'Moises', <br>
+              sobrenome: 'Lopes', <br>
+              idade: 26 <br>
+            } <br>
+            delete objetoPessoa1.nome;
+        </code>
+      </div>
+      <hr>
+
+      <p class="lead"><b>Travando Alterações no Objeto</b></p>
+      <div class="d-inline-block w-75 bg-dark">
+        <code>
+            const objetoPessoa1 = { <br>
+              nome: 'Moises', <br>
+              sobrenome: 'Lopes', <br>
+              idade: 26 <br>
+            } <br>
+            Objetct.freeze(objetoPessoa1);
+        </code>
+        <p class="lead text-light"><b>Desta forma os valores de cada chave do objeto 
+          não pode ser alterado/manipulados.
+        </b></p>
+      </div>
+      <hr>
+
+      <p class="lead"><b>defineProperty()</b></p>
+      <div class="d-inline-block w-75 bg-dark">
+        <code>
+            const objetoPessoa1 = { <br>
+              nome: 'Moises', <br>
+              sobrenome: 'Lopes', <br>
+              idade: 26 <br>
+            } <br>
+            Objetct.defineProperty(this, 'idade', { <br>
+              enumerable: true, // mostra a chave ou não. <br>
+              value: estoque, // valor da chave. <br>
+              writable: false, // pode alterar o valor ou não. <br>
+              configurable: false // pode apagar ou reconfigurar a chave ou não. <br>
+            });
+        </code>
+        <p class="lead text-light"><b>Usado quando é necessário travar alterações na chave de um objeto.</b></p>
+      </div>
+      <hr>
+
+      <p class="lead"><b>defineProperties()</b></p>
+      <div class="d-inline-block w-75 bg-dark">
+        <code>
+            const objetoPessoa1 = { <br>
+              nome: 'Moises', <br>
+              sobrenome: 'Lopes', <br>
+              idade: 26 <br>
+            } <br>
+            Objetct.defineProperties(this, { <br>
+              nome: { <br>
+                enumerable: true, // mostra a chave ou não. <br>
+                value: estoque, // valor da chave. <br>
+                writable: false, // pode alterar o valor ou não. <br>
+                configurable: false // pode apagar ou reconfigurar a chave ou não. <br>
+                } <br>
+
+              sobrenome: { <br>
+                enumerable: true, // mostra a chave ou não. <br>
+                value: estoque, // valor da chave. <br>
+                writable: false, // pode alterar o valor ou não. <br>
+                configurable: false // pode apagar ou reconfigurar a chave ou não. <br>
+                } <br>
+
+              idade: { <br>
+                enumerable: true, // mostra a chave ou não. <br>
+                value: estoque, // valor da chave. <br>
+                writable: false, // pode alterar o valor ou não. <br>
+                configurable: false // pode apagar ou reconfigurar a chave ou não. <br>
+                } <br>
+
+            });
+        </code>
+        <p class="lead text-light"><b>Usado quando é necessário travar alterações nas chaves de um objeto.</b></p>
+      </div>
+      <hr>
+
+      <p class="lead"><b>Getters e Setters</b></p>
+      <p class="lead m-0">Simula os métodos dos objetos como se fossem propriedades.</p>
+      <p class="lead m-0">Protege as propriedades do objeto</p>
+      <p class="lead m-0">Get = obter o valor</p>
+      <p class="lead">Set = configurar o valor</p>
+      <div class="d-inline-block w-75 bg-dark">
+        <code>
+          const produto = { <br>
+            nome: 'Camiseta', <br>
+            preço: 20, <br>
+            estoque: 3 <br>
+          } <br>
+          Objetct.defineProperty(this, 'idade', { <br>
+            enumerable: true, // mostra a chave ou não. <br>
+            configurable: false, // pode apagar ou reconfigurar a chave ou não. <br>
+            get: function () {
+              return estoque;
+            },
+            set: function(valor){
+              if ( typeof valor !== "number") {
+                throw new TypeError("Mensagem de Erro")
+              }
+
+              estoque = valor;
+            }
+          });
+        </code>
+      </div>
+      <hr>
+
+      <p class="lead m-0">MÉTODOS ÚTEIS PARA OBJETOS</p>
+
+      <p class="lead"><b>Apagando chaves dos objetos</b></p>
+      <div class="d-inline-block w-75 bg-dark">
+        <code>
+            const objetoPessoa1 = { <br>
+              nome: 'Moises', <br>
+              sobrenome: 'Lopes', <br>
+              idade: 26 <br>
+            } <br>
+            delete objetoPessoa1.nome;
+        </code>
+      </div>
+      <hr>
+
+
     </div>
     </div>
     <!--FIM CONTEUDO 09-->
