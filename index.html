@@ -96,7 +96,9 @@
 
         <hr />
 
-        <p class="lead"><b>TIPOS DE DADOS PRIMITIVOS  ( VALORES IMUTÁVEIS = Não mudam ):</b></p>
+        <p class="lead">
+          <b>TIPOS DE DADOS PRIMITIVOS ( VALORES IMUTÁVEIS = Não mudam ):</b>
+        </p>
         <p class="lead m-0"><b>String:</b> Armazenamento de Textos.</p>
         <p class="lead m-0">
           <b>Number:</b> Valores numéricos inteiros ou fracionados, positivos e
@@ -109,15 +111,21 @@
           <b>Undefined:</b> Não definido na memória ( Sem valor ).
         </p>
         <p class="lead">
-          <b>NULL (bigint,symbol)</b> Especificado como sem valor na memória ( Sem valor ).
+          <b>NULL (bigint,symbol)</b> Especificado como sem valor na memória (
+          Sem valor ).
         </p>
 
-        <hr>
+        <hr />
 
-        <p class="lead"><b>TIPOS DE DADOS POR REFERÊNCIA  ( VALORES MUTÁVEIS = Alteram seu valor ):</b></p>
-        <p class="lead m-0"><b>Array:</b> Armazena Lista de Dados. </p>
-        <p class="lead m-0"><b>Objetos:</b> Armazena Dados. </p>
-        <p class="lead m-0"><b>Function:</b> Executa Ações. </p>
+        <p class="lead">
+          <b
+            >TIPOS DE DADOS POR REFERÊNCIA ( VALORES MUTÁVEIS = Alteram seu
+            valor ):</b
+          >
+        </p>
+        <p class="lead m-0"><b>Array:</b> Armazena Lista de Dados.</p>
+        <p class="lead m-0"><b>Objetos:</b> Armazena Dados.</p>
+        <p class="lead m-0"><b>Function:</b> Executa Ações.</p>
 
         <hr />
 
@@ -147,18 +155,22 @@
         <p class="lead">
           A diferença entre as duas formas de declaração é que com <b>VAR</b> as
           variáveis podem sem redeclarada sem gerar erro no código. Porém com
-          <b>LET</b> isso não é possível, pois a variavel é declarada apenas uma unica vez.
+          <b>LET</b> isso não é possível, pois a variavel é declarada apenas uma
+          unica vez.
         </p>
 
         <p class="lead">
-          A variavel <b>LET</b> tem escopo de bloco, ou seja, todo o código usado entre "{}".
+          A variavel <b>LET</b> tem escopo de bloco, ou seja, todo o código
+          usado entre "{}".
         </p>
 
         <p class="lead">
-          A variavel <b>LET</b> não pode ser usada antes de ser definida, mas com <b>VAR</b> podemos, e ele retorna undefined, caso tenha sido atribuido um valor após ela ter sido usada.
+          A variavel <b>LET</b> não pode ser usada antes de ser definida, mas
+          com <b>VAR</b> podemos, e ele retorna undefined, caso tenha sido
+          atribuido um valor após ela ter sido usada.
         </p>
 
-        <hr>
+        <hr />
 
         <p class="lead"><b>DECLARAÇÃO DE CONSTANTES:</b></p>
         <p class="lead">Utiliza-se a instrução <b>"CONST"</b>.</p>
@@ -168,8 +180,8 @@
         <p class="lead"><b>VENDO O VALOR DE UMA VARIÁVEL E CONSTANTE:</b></p>
         <p class="lead m-0"><b>alert()</b>: Abre uma janela com a mensagem.</p>
         <p class="lead m-0">
-          <b>document.innerHTML()</b>: Escreve o valor da váriavel em um elemento
-          dentro Documento HTML.
+          <b>document.innerHTML()</b>: Escreve o valor da váriavel em um
+          elemento dentro Documento HTML.
         </p>
         <p class="lead m-0">
           <b>document.write()</b>: Escreve o valor da váriavel em um elemento
@@ -310,7 +322,6 @@
           <b>Função "prompt()":</b> Emite um alerta no navegador solicitando
           usuário que digite um valor, o qual vai ser atribuido a Função.
         </p>
-
       </div>
     </div>
     <!--FIM CONTEUDO 04-->
@@ -320,67 +331,136 @@
       <div class="col-md-8 text-center">
         <h2 class="meu-h2">Strings</h2>
 
-        <p class="lead">Podemos usar a barra invertida (\) para escrever String "Especiais"</p>
+        <p class="lead">
+          Podemos usar a barra invertida (\) para escrever String "Especiais"
+        </p>
 
-        <hr>
+        <hr />
 
         <p class="lead"><b>INDICE DE UMA STRING</b></p>
 
-        <p class="lead">As Strings tem indices, ou seja, cada letra tem um indice
-        o qaul recebe um valor e esse valor sempre começa em 0;</p>
+        <p class="lead">
+          As Strings tem indices, ou seja, cada letra tem um indice o qaul
+          recebe um valor e esse valor sempre começa em 0;
+        </p>
 
-        <p class="lead m-0 text-danger"><b>Exemplo string:</b> nome = "Moises"</p>
-        <p class="lead text-danger">Função = <b>console.log(nome,[0])</b> "vai retornar somente "M".</p>
+        <p class="lead m-0 text-danger">
+          <b>Exemplo string:</b> nome = "Moises"
+        </p>
+        <p class="lead text-danger">
+          Função = <b>console.log(nome,[0])</b> "vai retornar somente "M".
+        </p>
 
-        <hr>
+        <hr />
 
         <p class="lead"><b>BUSCAR INDICE DE UMA STRING</b></p>
-        
-        <p class="lead m-0 text-danger"><b>Exemplo 1 String:</b> nome = "Moises Lopes"</p>
-        <p class="lead text-danger">Função = <b>console.log(nome.indexOf("Lopes"))</b> vai retornar o indice onde inicia a palavra "Lopes".</p>
 
-        <p class="lead m-0 text-danger"><b>Exemplo 2 String:</b> nome = "Moises Lopes"</p>
-        <p class="lead text-danger">Função = <b>console.log(nome.indexOf("Lopes", 2))</b> vai retornar o indice onde inicia a palavra "Lopes" a partir do indice 2.</p>
+        <p class="lead m-0 text-danger">
+          <b>Exemplo 1 String:</b> nome = "Moises Lopes"
+        </p>
+        <p class="lead text-danger">
+          Função = <b>console.log(nome.indexOf("Lopes"))</b> vai retornar o
+          indice onde inicia a palavra "Lopes".
+        </p>
 
-        <p class="lead m-0 text-danger"><b>Exemplo 3 String:</b> nome = "Moises"</p>
-        <p class="lead text-danger">Função = <b>console.log(nome.lastIndexOf("M"))</b> vai retornar o indice onde está "M" a partir do ultimo indice.</p>
-        
+        <p class="lead m-0 text-danger">
+          <b>Exemplo 2 String:</b> nome = "Moises Lopes"
+        </p>
+        <p class="lead text-danger">
+          Função = <b>console.log(nome.indexOf("Lopes", 2))</b> vai retornar o
+          indice onde inicia a palavra "Lopes" a partir do indice 2.
+        </p>
+
+        <p class="lead m-0 text-danger">
+          <b>Exemplo 3 String:</b> nome = "Moises"
+        </p>
+        <p class="lead text-danger">
+          Função = <b>console.log(nome.lastIndexOf("M"))</b> vai retornar o
+          indice onde está "M" a partir do ultimo indice.
+        </p>
+
         <p class="lead"><b>EXPRESSÕES REGULARES DE UMA STRING</b></p>
 
-        <p class="lead m-0 text-danger"><b>Exemplo 3 String:</b> nome = "Moises"</p>
-        <p class="lead text-danger">Função = <b>console.log(nome.match(/[a-z]/g))</b> Retorna todas as letras Minusculas da String .</p>
+        <p class="lead m-0 text-danger">
+          <b>Exemplo 3 String:</b> nome = "Moises"
+        </p>
+        <p class="lead text-danger">
+          Função = <b>console.log(nome.match(/[a-z]/g))</b> Retorna todas as
+          letras Minusculas da String .
+        </p>
 
-        <p class="lead m-0 text-danger"><b>Exemplo 3 String:</b> nome = "Moises"</p>
-        <p class="lead text-danger">Função = <b>console.log(nome.search(/M/))</b> Retorna o indice do que está sendo buscado .</p>
+        <p class="lead m-0 text-danger">
+          <b>Exemplo 3 String:</b> nome = "Moises"
+        </p>
+        <p class="lead text-danger">
+          Função = <b>console.log(nome.search(/M/))</b> Retorna o indice do que
+          está sendo buscado .
+        </p>
 
-        <p class="lead m-0 text-danger"><b>Exemplo 3 String:</b> nome = "Moises"</p>
-        <p class="lead text-danger">Função = <b>console.log(nome.replace("Moises","Lopes"))</b> Substitui uma palavra pela outra.</p>
+        <p class="lead m-0 text-danger">
+          <b>Exemplo 3 String:</b> nome = "Moises"
+        </p>
+        <p class="lead text-danger">
+          Função = <b>console.log(nome.replace("Moises","Lopes"))</b> Substitui
+          uma palavra pela outra.
+        </p>
 
-        <p class="lead m-0 text-danger"><b>Exemplo 3 String:</b> nome = "Moises"</p>
-        <p class="lead m-0 text-danger">Função = <b>console.log(nome.slice(1,3))</b> Retorna de um indice a outro [ "oi"].</p>
-        <p class="lead">Números negativos vão pegar os indices do final para o início da String.</p>
+        <p class="lead m-0 text-danger">
+          <b>Exemplo 3 String:</b> nome = "Moises"
+        </p>
+        <p class="lead m-0 text-danger">
+          Função = <b>console.log(nome.slice(1,3))</b> Retorna de um indice a
+          outro [ "oi"].
+        </p>
+        <p class="lead">
+          Números negativos vão pegar os indices do final para o início da
+          String.
+        </p>
 
         <p class="lead"><b>TAMANHO DE UMA STRING</b></p>
-        
-        <p class="lead m-0 text-danger"><b>Exemplo 3 String:</b> nome = "Moises"</p>
-        <p class="lead text-danger">Função = <b>console.log(nome.length)</b> Retorna quantidade de caracteres da String.</p>
+
+        <p class="lead m-0 text-danger">
+          <b>Exemplo 3 String:</b> nome = "Moises"
+        </p>
+        <p class="lead text-danger">
+          Função = <b>console.log(nome.length)</b> Retorna quantidade de
+          caracteres da String.
+        </p>
 
         <p class="lead"><b>DIVISÃO DE UMA STRING</b></p>
-        
-        <p class="lead m-0 text-danger"><b>Exemplo 3 String:</b> nome = "Moises Evangelista Lopes"</p>
-        <p class="lead text-danger">Função = <b>console.log(nome.split(" "))</b> Retorna as palavras de ums String, sem o Espaço (" "), dentro de uma Array.</p>
+
+        <p class="lead m-0 text-danger">
+          <b>Exemplo 3 String:</b> nome = "Moises Evangelista Lopes"
+        </p>
+        <p class="lead text-danger">
+          Função = <b>console.log(nome.split(" "))</b> Retorna as palavras de
+          ums String, sem o Espaço (" "), dentro de uma Array.
+        </p>
 
         <p class="lead"><b>DEIXAR STRING TODA MAIUSCULA OU MINUSCULA</b></p>
-        
-        <p class="lead m-0 text-danger"><b>Exemplo 3 String:</b> nome = "Moises Evangelista Lopes"</p>
-        <p class="lead text-danger">Função = <b>console.log(nome.toUpperCase())</b> Retorna a String com todos os caracteres maiusculos.</p>
 
-        <p class="lead m-0 text-danger"><b>Exemplo 3 String:</b> nome = "Moises Evangelista Lopes"</p>
-        <p class="lead text-danger">Função = <b>console.log(nome.toLowerCase())</b> Retorna a String com todos os caracteres maiusculos.</p>
+        <p class="lead m-0 text-danger">
+          <b>Exemplo 3 String:</b> nome = "Moises Evangelista Lopes"
+        </p>
+        <p class="lead text-danger">
+          Função = <b>console.log(nome.toUpperCase())</b> Retorna a String com
+          todos os caracteres maiusculos.
+        </p>
+
+        <p class="lead m-0 text-danger">
+          <b>Exemplo 3 String:</b> nome = "Moises Evangelista Lopes"
+        </p>
+        <p class="lead text-danger">
+          Função = <b>console.log(nome.toLowerCase())</b> Retorna a String com
+          todos os caracteres maiusculos.
+        </p>
 
         <p class="lead"><b>ULTIMA LETRA DE UMA STRING</b></p>
-        <p class="lead text-danger">Função = <b>console.log(nome.toLowerCase().endsWith("Letra"))</b> Retorna a String que termina com os caracteres no Parênteses..</p>
-
+        <p class="lead text-danger">
+          Função =
+          <b>console.log(nome.toLowerCase().endsWith("Letra"))</b> Retorna a
+          String que termina com os caracteres no Parênteses..
+        </p>
       </div>
     </div>
     <!--FIM CONTEUDO 05-->
@@ -391,63 +471,117 @@
         <h2 class="meu-h2">Numbers</h2>
 
         <p class="lead"><b>CONVERÇÃO DE NUMBER PARA STRING</b></p>
-        <p class="lead m-0 text-danger"><b>Função:</b> " console.log(num1.toString() + num2 ) "</p>
-        <p class="lead"><b>OBS.: </b>Fazendo desta forma, o valor da variável não é alterado.</p>
+        <p class="lead m-0 text-danger">
+          <b>Função:</b> " console.log(num1.toString() + num2 ) "
+        </p>
+        <p class="lead">
+          <b>OBS.: </b>Fazendo desta forma, o valor da variável não é alterado.
+        </p>
 
-        <hr>
+        <hr />
 
         <p class="lead"><b>CONVERÇÃO DE NUMBER PARA BINÁRIO</b></p>
-        <p class="lead m-0 text-danger"><b>Função:</b> " console.log(num1.toString(2) ) "</p>
-        <p class="lead"><b>OBS.: </b> Mostra a representação Binária, sem perder o valor da variavel.</p>
-      
-        <hr>
+        <p class="lead m-0 text-danger">
+          <b>Função:</b> " console.log(num1.toString(2) ) "
+        </p>
+        <p class="lead">
+          <b>OBS.: </b> Mostra a representação Binária, sem perder o valor da
+          variavel.
+        </p>
+
+        <hr />
 
         <p class="lead"><b>ARREDONDAMENTO DE CASAS DECIMAIS</b></p>
-        <p class="lead m-0 text-danger"><b>Função:</b> " console.log(num1.toFixed(2) ) "</p>
-        <p class="lead"><b>OBS.: </b> Fixa o número em 2 casas decimais, sem perder o número da variavel.</p>
-      
-        <hr>
+        <p class="lead m-0 text-danger">
+          <b>Função:</b> " console.log(num1.toFixed(2) ) "
+        </p>
+        <p class="lead">
+          <b>OBS.: </b> Fixa o número em 2 casas decimais, sem perder o número
+          da variavel.
+        </p>
+
+        <hr />
 
         <p class="lead"><b>VERIFICANDO SE UM NUMBER É INTEIRO</b></p>
-        <p class="lead m-0 text-danger"><b>Função:</b> " console.log(Number.isInteger(num1) ) "</p>
-        <p class="lead"><b>OBS.: </b> Verifica se o número é inteiro e retorna os valores TRUE ou FALSE.</p>
-      
-        <hr>
+        <p class="lead m-0 text-danger">
+          <b>Função:</b> " console.log(Number.isInteger(num1) ) "
+        </p>
+        <p class="lead">
+          <b>OBS.: </b> Verifica se o número é inteiro e retorna os valores TRUE
+          ou FALSE.
+        </p>
 
-        <p class="lead"><b>VERIFICANDO SE UM NUMBER É "NaN" ( Not a Number )</b></p>
-        <p class="lead m-0 text-danger"><b>Função:</b> " console.log(Number.isNaN(num1) ) "</p>
-        <p class="lead"><b>OBS.: </b> Verifica se o número é NaN e retorna os valores TRUE ou FALSE.</p>
+        <hr />
 
-        <hr>
+        <p class="lead">
+          <b>VERIFICANDO SE UM NUMBER É "NaN" ( Not a Number )</b>
+        </p>
+        <p class="lead m-0 text-danger">
+          <b>Função:</b> " console.log(Number.isNaN(num1) ) "
+        </p>
+        <p class="lead">
+          <b>OBS.: </b> Verifica se o número é NaN e retorna os valores TRUE ou
+          FALSE.
+        </p>
+
+        <hr />
 
         <p class="lead"><b>IMPRECISÃO DOS NÚMEROS COM CASAS DECIMAIS</b></p>
-        <p class="lead"><b>OBS.: </b> Uma forma de contornar isso, é não fazendo calculos com números decimais.</p>
-        <p class="lead text-danger"> Exemplo: Calculo " 0.7 + 0.1 " = ((0.7*100)+(0.1*100))/100</p>
-      
-        <hr>
+        <p class="lead">
+          <b>OBS.: </b> Uma forma de contornar isso, é não fazendo calculos com
+          números decimais.
+        </p>
+        <p class="lead text-danger">
+          Exemplo: Calculo " 0.7 + 0.1 " = ((0.7*100)+(0.1*100))/100
+        </p>
+
+        <hr />
 
         <p class="lead"><b>OBJETO "MATH"</b></p>
 
-        <p class="lead"><b>Arredondamento para baixo:</b> " Math.floor(num1) "</p>
+        <p class="lead">
+          <b>Arredondamento para baixo:</b> " Math.floor(num1) "
+        </p>
         <p class="lead"><b>Arredondamento para cima:</b> " Math.ceil(num1) "</p>
-        <p class="lead"><b>Arredondamento automatico:</b> " Math.round(num1) "</p>
-        <p class="lead"><b>Maior número de uma sequencia:</b> " Math.max(num1,num2,num3...) "</p>
-        <p class="lead"><b>Menor número de uma sequencia:</b> " Math.min(num1,num2,num3...) "</p>
-        <p class="lead"><b>Numeros Aleatórios entre 0 e 1:</b> " Math.random() "</p>
-        <p class="lead"><b>Potência:</b> " Math.pow(2,10) " é igual a 2 elevado a 10.</p>
-        <p class="lead"><b>Arredondamento automatico:</b> " Math.round(num1) "</p>
+        <p class="lead">
+          <b>Arredondamento automatico:</b> " Math.round(num1) "
+        </p>
+        <p class="lead">
+          <b>Maior número de uma sequencia:</b> " Math.max(num1,num2,num3...) "
+        </p>
+        <p class="lead">
+          <b>Menor número de uma sequencia:</b> " Math.min(num1,num2,num3...) "
+        </p>
+        <p class="lead">
+          <b>Numeros Aleatórios entre 0 e 1:</b> " Math.random() "
+        </p>
+        <p class="lead">
+          <b>Potência:</b> " Math.pow(2,10) " é igual a 2 elevado a 10.
+        </p>
+        <p class="lead">
+          <b>Arredondamento automatico:</b> " Math.round(num1) "
+        </p>
 
-        <hr>
+        <hr />
 
         <p class="lead"><b>OBJETO "DATE"</b></p>
 
-        <p class="lead"><b>OBS.:</b> Para se trabalhar com datas, usamos Funções Construtoras [ <b>Ex: const data = new Date();</b> ]</p>
+        <p class="lead">
+          <b>OBS.:</b> Para se trabalhar com datas, usamos Funções Construtoras
+          [ <b>Ex: const data = new Date();</b> ]
+        </p>
 
-        <p class="lead"><b>OBS.:</b> Marco zero das Datas é <b>01/01/1970</b> ( Epoca Unix )</p>
+        <p class="lead">
+          <b>OBS.:</b> Marco zero das Datas é <b>01/01/1970</b> ( Epoca Unix )
+        </p>
 
-        <p class="lead"><b>CRIAR UMA DATA [ ATUAL ]:</b> " const data = new Date() " </p>
+        <p class="lead">
+          <b>CRIAR UMA DATA [ ATUAL ]:</b> " const data = new Date() "
+        </p>
 
-        <p class="lead m-0"><b>PEGAR DATA ESPECIFICA:</b> const data = new Date(1997, 10, 24, 22)</p>
+        <p class="lead m-0">
+          <b>PEGAR DATA ESPECIFICA:</b> const data = new Date(1997, 10, 24, 22)
+        </p>
         <p class="lead">Retorna a Data 24/11/1997 22:00</p>
 
         <p class="lead"><b>PEGAR DIA</b> " const data.getDate() "</p>
@@ -456,19 +590,29 @@
         <p class="lead"><b>PEGAR HORA </b> " const data.getHours() "</p>
         <p class="lead"><b>PEGAR MINUTOS</b> " const data.getMinutes() "</p>
         <p class="lead"><b>PEGAR SEGUNDOS</b> " const data.getSeconds() "</p>
-        <p class="lead"><b>PEGAR MILISEGUNDOS</b> " const data.getMiliseconds() "</p>
+        <p class="lead">
+          <b>PEGAR MILISEGUNDOS</b> " const data.getMiliseconds() "
+        </p>
         <p class="lead"><b>PEGAR DIA DA SEMANA</b> " const data.getDay() "</p>
 
-        <hr> 
+        <hr />
 
-        <p class="lead"><b>EXECUTAR FUNÇÃO EM UM INTERVALO DE TEMPO</b> "setInterval( function , 1000 milisegundos );" </p>
+        <p class="lead">
+          <b>EXECUTAR FUNÇÃO EM UM INTERVALO DE TEMPO</b> "setInterval( function
+          , 1000 milisegundos );"
+        </p>
 
-        <p class="lead"><b>EXECUTAR FUNÇÃO 1 VEZ APÓS UM PERIODO</b> "setTimeout( function , 1000 milisegundos );" </p>
+        <p class="lead">
+          <b>EXECUTAR FUNÇÃO 1 VEZ APÓS UM PERIODO</b> "setTimeout( function ,
+          1000 milisegundos );"
+        </p>
 
-        <p class="lead"><b>ZERA UM INTERVALO DE TEMPO</b> "clearInterval( VARIAVEL QUE RECEBE O INTERVALO )"</p>
+        <p class="lead">
+          <b>ZERA UM INTERVALO DE TEMPO</b> "clearInterval( VARIAVEL QUE RECEBE
+          O INTERVALO )"
+        </p>
 
-        <hr>
-
+        <hr />
       </div>
     </div>
     <!--FIM CONTEUDO 06-->
@@ -476,583 +620,709 @@
     <!--INICIO CONTEUDO 07-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
-        
         <h2 class="meu-h2">Arrays</h2>
 
-        <p class="lead">Arrays são listas de coisas ( Nomes, Numeros, Obejtos, e etc )</p>
+        <p class="lead">
+          Arrays são listas de coisas ( Nomes, Numeros, Obejtos, e etc )
+        </p>
 
-        <hr>
+        <hr />
 
-        <p  class="lead"><b>ACESSAR INDICE DE UM ARRAY</b></p>
+        <p class="lead"><b>ACESSAR INDICE DE UM ARRAY</b></p>
 
         <p class="lead text-danger">" console.log(array[0]) "</p>
 
-        <p  class="lead"><b>TAMANHO DE UM ARRAY</b></p>
+        <p class="lead"><b>TAMANHO DE UM ARRAY</b></p>
 
         <p class="lead text-danger">" console.log(array.length) "</p>
 
-        <p  class="lead"><b>ADICIONANDO ITEM NO FINAL DO ARRAY</b></p>
+        <p class="lead"><b>ADICIONANDO ITEM NO FINAL DO ARRAY</b></p>
 
         <p class="lead text-danger">" array.push("Objeto") "</p>
 
-        <p  class="lead"><b>ADICIONANDO ITEM NO INICIO DO ARRAY</b></p>
+        <p class="lead"><b>ADICIONANDO ITEM NO INICIO DO ARRAY</b></p>
 
         <p class="lead text-danger">" array.unshift("Objeto") "</p>
 
-        <p  class="lead"><b>REMOVENDO ITEM DO FINAL DO ARRAY</b></p>
+        <p class="lead"><b>REMOVENDO ITEM DO FINAL DO ARRAY</b></p>
 
         <p class="lead text-danger">" array.pop() "</p>
 
-        <p  class="lead"><b>REMOVENDO ITEM DO INICIO DO ARRAY</b></p>
+        <p class="lead"><b>REMOVENDO ITEM DO INICIO DO ARRAY</b></p>
 
         <p class="lead text-danger">" array.shift() "</p>
 
-        <p  class="lead"><b>DELETANDO ITEM DO ARRAY</b></p>
+        <p class="lead"><b>DELETANDO ITEM DO ARRAY</b></p>
 
         <p class="lead m-0 text-danger">" delete array[0] "</p>
-        <p class="lead"> Desta forma, o valor do indice que teve um item excluido, fica com valor de "vazio".</p>
-
-        <p  class="lead"><b>PEGAR UM RANGE NO ARRAY</b></p>
-
-        <p class="lead m-0 text-danger">" array.slice(1,2) "</p>
-        <p class="lead">Desta forma, retornar os valores do indice 1 até o 2.</p>
-
-        <p class="lead m-0 text-danger">" array.slice(1, -1) "</p>
-        <p class="lead">Desta forma, retornar os valores do indice 1 até o penultimo item do array.</p>
-
-        <p  class="lead"><b>UNINDO TODOS OS ITENS DO ARRAY</b></p>
-
-        <p class="lead text-danger">" array.join(" ") "</p>
-        <p class="lead">O item que colocamos dentro do parênteses, é usado como separador dos elementos que serão unidos,
-          no exemplo usamos um espaço, mas poderia ser vírgula e etc.
+        <p class="lead">
+          Desta forma, o valor do indice que teve um item excluido, fica com
+          valor de "vazio".
         </p>
 
-        <p  class="lead"><b>VERIFICANDO SE O OBJETO É ARRAY</b></p>
+        <p class="lead"><b>PEGAR UM RANGE NO ARRAY</b></p>
+
+        <p class="lead m-0 text-danger">" array.slice(1,2) "</p>
+        <p class="lead">
+          Desta forma, retornar os valores do indice 1 até o 2.
+        </p>
+
+        <p class="lead m-0 text-danger">" array.slice(1, -1) "</p>
+        <p class="lead">
+          Desta forma, retornar os valores do indice 1 até o penultimo item do
+          array.
+        </p>
+
+        <p class="lead"><b>UNINDO TODOS OS ITENS DO ARRAY</b></p>
+
+        <p class="lead text-danger">" array.join(" ") "</p>
+        <p class="lead">
+          O item que colocamos dentro do parênteses, é usado como separador dos
+          elementos que serão unidos, no exemplo usamos um espaço, mas poderia
+          ser vírgula e etc.
+        </p>
+
+        <p class="lead"><b>VERIFICANDO SE O OBJETO É ARRAY</b></p>
 
         <p class="lead text-danger">" array instanceof Array "</p>
         <p class="lead">Retorna TRUE se for um Array, e FALSE caso não seja.</p>
 
-        <p  class="lead"><b>REMOVENDO ITEM DO INICIO DO ARRAY</b></p>
+        <p class="lead"><b>REMOVENDO ITEM DO INICIO DO ARRAY</b></p>
 
         <p class="lead text-danger">" array.shift() "</p>
 
-        <p  class="lead"><b>PEGAR O "RESTO" DE UM ARRAY</b></p>
+        <p class="lead"><b>PEGAR O "RESTO" DE UM ARRAY</b></p>
 
         <p class="lead m-0 text-danger">[..."rest"] e [... "spread"]</p>
 
-        <hr>
+        <hr />
 
-        <p class="lead"><b>OBS.:</b> Podemos usar CONST para definir Arrays, pois o que é alterado
-        são seus valores internos e não a constante "Array".</p>
+        <p class="lead">
+          <b>OBS.:</b> Podemos usar CONST para definir Arrays, pois o que é
+          alterado são seus valores internos e não a constante "Array".
+        </p>
 
-        <hr>
+        <hr />
 
-        <p  class="lead"><b>MÉTODO "SPLICE" EM ARRAYS </b></p>
+        <p class="lead"><b>MÉTODO "SPLICE" EM ARRAYS </b></p>
 
-        <p class="lead text-danger">" array.splice("indice atual","delete","elem1","elem2","elem3") "</p>
+        <p class="lead text-danger">
+          " array.splice("indice atual","delete","elem1","elem2","elem3") "
+        </p>
 
-        <p class="lead m-0"><b>Simulando POP ( Remover o ultimo elemento )</b></p>
+        <p class="lead m-0">
+          <b>Simulando POP ( Remover o ultimo elemento )</b>
+        </p>
         <p class="lead m-0 text-danger">" array.splice(-1, 1) "</p>
         <p class="lead text-danger">" array.splice(-1, Number.MAX_VALUE) "</p>
 
-        <p class="lead m-0"><b>Simulando SHIFT ( Remover o primeiro elemento )</b></p>
+        <p class="lead m-0">
+          <b>Simulando SHIFT ( Remover o primeiro elemento )</b>
+        </p>
         <p class="lead text-danger">" array.splice(0, 1) "</p>
 
-        <p class="lead m-0"><b>Simulando PUSH ( Adicionando um elemento ao final do Array )</b></p>
-        <p class="lead text-danger">" array.splice(array.length , 0, "Elemento a ser adicionado", ...) "</p>
+        <p class="lead m-0">
+          <b>Simulando PUSH ( Adicionando um elemento ao final do Array )</b>
+        </p>
+        <p class="lead text-danger">
+          " array.splice(array.length , 0, "Elemento a ser adicionado", ...) "
+        </p>
 
-        <p class="lead m-0"><b>Simulando UNSHIFT ( Adicionando um elemento ao começo do Array )</b></p>
-        <p class="lead text-danger">" array.splice(0, 0, "Elemento a ser adicionado", ...) "</p>
+        <p class="lead m-0">
+          <b
+            >Simulando UNSHIFT ( Adicionando um elemento ao começo do Array )</b
+          >
+        </p>
+        <p class="lead text-danger">
+          " array.splice(0, 0, "Elemento a ser adicionado", ...) "
+        </p>
 
-        <hr>
+        <hr />
 
-        <p  class="lead"><b>CONCATENANDO ARRAYS </b></p>
+        <p class="lead"><b>CONCATENANDO ARRAYS </b></p>
 
-        <p class="lead text-danger"> "const array3 = array1.concat(array2)" </p>
-        <p class="lead text-danger"> "const array3 = [...array1, ...arra2]" </p>
+        <p class="lead text-danger">"const array3 = array1.concat(array2)"</p>
+        <p class="lead text-danger">"const array3 = [...array1, ...arra2]"</p>
 
-        <hr>
+        <hr />
 
-        <p  class="lead"><b>"FILTER" - FILTRANDO ARRAY </b></p>
+        <p class="lead"><b>"FILTER" - FILTRANDO ARRAY </b></p>
 
         <div class="d-inline-block w-75 bg-dark">
           <code>
-
-            const numerosFiltrados = arrayNumeros.filter(callbackFilter); <br>
-            <br>
-            function callbackFilter (valorElemento, indiceAtual, arrayCompleto) { <br>
-              return valor > 10; <br>
-            } <br>
+            const numerosFiltrados = arrayNumeros.filter(callbackFilter); <br />
+            <br />
+            function callbackFilter (valorElemento, indiceAtual, arrayCompleto)
+            { <br />
+            return valor > 10; <br />
+            } <br />
 
             console.log(numerosFiltrados);
-            
           </code>
-          
         </div>
-        <hr>
+        <hr />
 
-        <p  class="lead"><b>"MAP" - MAPEANDO ARRAY </b></p>
+        <p class="lead"><b>"MAP" - MAPEANDO ARRAY </b></p>
 
-        <p class="lead"> Usa o Array original e cria um novo array que pode ser alterado os valores originais ou não. </p>
+        <p class="lead">
+          Usa o Array original e cria um novo array que pode ser alterado os
+          valores originais ou não.
+        </p>
 
         <div class="d-inline-block w-75 bg-dark">
           <code>
-
-            const numerosMap = arrayNumeros.map(callbackFilter); <br>
-            <br>
-            function callbackFilter (valorElemento, indiceAtual, arrayCompleto) { <br>
-              return valor * 2 ; <br>
-            } <br>
+            const numerosMap = arrayNumeros.map(callbackFilter); <br />
+            <br />
+            function callbackFilter (valorElemento, indiceAtual, arrayCompleto)
+            { <br />
+            return valor * 2 ; <br />
+            } <br />
 
             console.log(numerosMap);
-            
           </code>
-          
         </div>
-        <hr>
+        <hr />
 
-        <p  class="lead"><b>"REDUCE" - REDUZINDO ARRAY </b></p>
+        <p class="lead"><b>"REDUCE" - REDUZINDO ARRAY </b></p>
 
-        <p class="lead"> Usada para reduzir o Array à um unico elemento. </p>
+        <p class="lead">Usada para reduzir o Array à um unico elemento.</p>
 
         <div class="d-inline-block w-75 bg-dark">
           <code>
-
-            const numerosMap = arrayNumeros.map(callbackFilter, "valor inicial acumulador"); <br>
-            <br>
-            function callbackFilter (acumulador, valorElemento, indiceAtual, arrayCompleto) { <br>
-              return valor * 2 ; <br>
-            } <br>
+            const numerosMap = arrayNumeros.map(callbackFilter, "valor inicial
+            acumulador"); <br />
+            <br />
+            function callbackFilter (acumulador, valorElemento, indiceAtual,
+            arrayCompleto) { <br />
+            return valor * 2 ; <br />
+            } <br />
 
             console.log(numerosMap);
-            
           </code>
-          
         </div>
-        <hr>
+        <hr />
 
-        <p  class="lead"><b>FILTER + MAP + REDUCE </b></p>
+        <p class="lead"><b>FILTER + MAP + REDUCE </b></p>
 
-        <p class="lead"> Unindo os três métodos </p>
+        <p class="lead">Unindo os três métodos</p>
 
         <div class="d-inline-block w-75 bg-dark">
           <code>
-
-            const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
-
-            const numerosPares = numeros
-              .filter(valor => valor % 2 === 0)
-              .map(valor => valor * 2 )
-              .reduce((acumulador, valor) => acumulador + valor );
-
+            const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27]; const
+            numerosPares = numeros .filter(valor => valor % 2 === 0) .map(valor
+            => valor * 2 ) .reduce((acumulador, valor) => acumulador + valor );
             consol.log(numerosPares);
-            
           </code>
-          
         </div>
-        <hr>
-
+        <hr />
       </div>
     </div>
     <!--FIM CONTEUDO 07-->
 
     <!--INICIO CONTEUDO 08-->
     <div class="row align-items-center justify-content-center">
-    <div class="col-md-8 text-center">
+      <div class="col-md-8 text-center">
+        <h2 class="meu-h2">Funções</h2>
 
-      <h2 class="meu-h2">Funções</h2>
+        <p class="lead">Funções executam ações dentro do código.</p>
 
-      <p class="lead">Funções executam ações dentro do código.</p>
+        <p class="lead text-danger">
+          A nomenclatura para as funções segue a mesma regra de nomenclatura das
+          variáveis.
+        </p>
 
-      <p class="lead text-danger">A nomenclatura para as funções segue a mesma
-        regra de nomenclatura das variáveis.
-      </p>
+        <hr />
 
-      <hr>
+        <p class="lead"><b>DECLARANDO UMA FUNÇÃO</b></p>
 
-      <p class="lead"><b>DECLARANDO UMA FUNÇÃO</b></p>
+        <p class="lead text-danger">
+          " function nomeFunção ( valores de Input ) { o que a função vai fazer
+          } "
+        </p>
 
-      <p class="lead text-danger">" function nomeFunção ( valores de Input ) { o que a função vai fazer } "</p>
+        <p class="lead"><b>RETORNANDO UM VALOR COM A FUNÇÃO</b></p>
 
-      <p class="lead"><b>RETORNANDO UM VALOR COM A FUNÇÃO</b></p>
+        <p class="lead text-danger">
+          " function nomeFunção ( varDeInput ) { return "varDeInput" } "
+        </p>
 
-      <p class="lead text-danger">" function nomeFunção ( varDeInput ) { return "varDeInput" } "</p>
+        <p class="lead"><b>EXEMPLOS DE FUNÇÃO</b></p>
 
-      <p class="lead"><b>EXEMPLOS DE FUNÇÃO</b></p>
+        <p class="lead m-0">
+          Declaração de Função Padrão ( Function Hoisting )
+        </p>
+        <div class="d-inline-block w-50 bg-dark">
+          <code>
+            function soma(x,y) {<br />
+            const resultado = x + y;<br />
+            return resultado; }
+          </code>
+        </div>
+        <hr />
+        <p class="lead m-0">
+          Declaração de Função dentro de uma CONST ( Function Expression )
+        </p>
+        <div class="d-inline-block w-50 bg-dark">
+          <code>
+            const raiz = function soma(n) {<br />
+            return n ** 0.5; };
+          </code>
+        </div>
+        <hr />
+        <p class="lead m-0">Declaração de Função Arrow</p>
+        <div class="d-inline-block w-50 bg-dark">
+          <code> const raiz = (n) => n ** 0.5 </code>
+        </div>
+        <hr />
 
-      <p class="lead m-0"> Declaração de Função Padrão ( Function Hoisting )</p>
-      <div class="d-inline-block w-50 bg-dark">
-        <code>
-            function soma(x,y) {<br>
-              const resultado = x + y;<br>
-              return resultado;
-            }
-        </code>
-      </div>
-      <hr>
-      <p class="lead m-0"> Declaração de Função dentro de uma CONST ( Function Expression ) </p>
-      <div class="d-inline-block w-50 bg-dark">
-        <code>
-            const raiz = function soma(n) {<br>
-              return n ** 0.5;
-            };
-        </code>
-      </div>
-      <hr>
-      <p class="lead m-0"> Declaração de Função Arrow</p>
-      <div class="d-inline-block w-50 bg-dark">
-        <code>
-            const raiz = (n) => n ** 0.5
-        </code>
-      </div>
-      <hr>
+        <p class="lead"><b>PARÂMETROS DA FUNÇÃO</b></p>
 
-      <p class="lead"><b>PARÂMETROS DA FUNÇÃO</b></p>
+        <p class="lead m-0">
+          Retorna todos os parametros(argumentos) da função dentro de um objeto.
+        </p>
+        <div class="d-inline-block w-50 bg-dark">
+          <code> console.log(arguments) </code>
+        </div>
+        <hr />
 
-      <p class="lead m-0">Retorna todos os parametros(argumentos) da função dentro de um objeto.</p>
-      <div class="d-inline-block w-50 bg-dark">
-        <code>
-            console.log(arguments)
-        </code>
-      </div>
-      <hr>
+        <p class="lead"><b>FUNÇÕES DE CALLBACK</b></p>
 
-      <p class="lead"><b>FUNÇÕES DE CALLBACK</b></p>
+        <p class="lead m-0">
+          Executa as funções na ordem que definimos, porem tem maneiras melhores
+          de executar isso.
+        </p>
 
-      <p class="lead m-0">Executa as funções na ordem que definimos, porem tem maneiras melhores de executar isso.</p>
-      
-      <hr>
+        <hr />
 
-      <p class="lead"><b>FUNÇÕES IMEDIATAS ( IIFE )</b></p>
+        <p class="lead"><b>FUNÇÕES IMEDIATAS ( IIFE )</b></p>
 
-      <p class="lead m-0">Também chamadas de "Auto Invocadas" </p>
-      <hr>
+        <p class="lead m-0">Também chamadas de "Auto Invocadas"</p>
+        <hr />
 
-      <p class="lead"><b>FUNÇÕES FÁBRICA ( FACTORY FUNCTIONS )</b></p>
+        <p class="lead"><b>FUNÇÕES FÁBRICA ( FACTORY FUNCTIONS )</b></p>
 
-      <p class="lead m-0"> Retorna objetos ( fabrica objetos, molde para gerar objetos ) </p>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-            function criaPessoa(nome, sobrenome){ <br>
-              return { <br>
-                nome, <br>
-                sobrenome, <br> 
-                fala: function(assunto){ <br>
-                  return `${this.nome} está falando sobre ${assunto}` <br>
-                } <br>
-              } <br>
-            } <br>
-            <br>
+        <p class="lead m-0">
+          Retorna objetos ( fabrica objetos, molde para gerar objetos )
+        </p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            function criaPessoa(nome, sobrenome){ <br />
+            return { <br />
+            nome, <br />
+            sobrenome, <br />
+            fala: function(assunto){ <br />
+            return `${this.nome} está falando sobre ${assunto}` <br />
+            } <br />
+            } <br />
+            } <br />
+            <br />
             const pessoa1 = new Pessoa ('Moises','Lopes')
-        </code>
-      </div>
+          </code>
+        </div>
 
-      <hr>
+        <hr />
 
-      <p class="lead"><b>FUNÇÕES CONSTRUTORAS ( CONSTRUCTOR FUNCTIONS )</b></p>
+        <p class="lead">
+          <b>FUNÇÕES CONSTRUTORAS ( CONSTRUCTOR FUNCTIONS )</b>
+        </p>
 
-      <p class="lead m-0"> Retorna objetos ( cria objetos, molde para gerar objetos ) </p>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-            function Pessoa(nome, sobrenome){ <br>
-             this.nome = nome; <br>
-             this.sobrenome = sobrenome;<br> 
-             this.metodo = function(){<br>
-              "Função que o método vai receber"<br>
-             } <br>
-            } <br>
-            <br>
+        <p class="lead m-0">
+          Retorna objetos ( cria objetos, molde para gerar objetos )
+        </p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            function Pessoa(nome, sobrenome){ <br />
+            this.nome = nome; <br />
+            this.sobrenome = sobrenome;<br />
+            this.metodo = function(){<br />
+            "Função que o método vai receber"<br />
+            } <br />
+            } <br />
+            <br />
             const pessoa1 = new Pessoa ('Moises','Lopes')
-        </code>
-      </div>
+          </code>
+        </div>
 
-      <hr>
+        <hr />
 
-      <p class="lead"><b>FUNÇÕES RECURSIVAS</b></p>
+        <p class="lead"><b>FUNÇÕES RECURSIVAS</b></p>
 
-      <p class="lead m-0">Uma função que chama ela mesmo ( Como se fosse uma estrutura de repetição ).</p>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-            function recursiva(max){ <br>
-              if ( max > 10 ) return; <br>
-              max++; <br>
-              console.log(max); <br>
-              recursiva(max); <br>
-            } <br>
+        <p class="lead m-0">
+          Uma função que chama ela mesmo ( Como se fosse uma estrutura de
+          repetição ).
+        </p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            function recursiva(max){ <br />
+            if ( max > 10 ) return; <br />
+            max++; <br />
+            console.log(max); <br />
+            recursiva(max); <br />
+            } <br />
 
             recursiva(-10);
-        </code>
-      </div>
-      <p class="lead"><b>OBS.:</b> Possui um limite de 1000 repetições.</p>
+          </code>
+        </div>
+        <p class="lead"><b>OBS.:</b> Possui um limite de 1000 repetições.</p>
 
-      <hr>
+        <hr />
 
-      <p class="lead"><b>FUNÇÕES GERADORAS</b></p>
+        <p class="lead"><b>FUNÇÕES GERADORAS</b></p>
 
-      <p class="lead m-0"> Funciona como um contador com pausas, cada vez que é chamado o 
-        comando "next().value", ela entrega o valor do objeto gerado.
-      </p>
+        <p class="lead m-0">
+          Funciona como um contador com pausas, cada vez que é chamado o comando
+          "next().value", ela entrega o valor do objeto gerado.
+        </p>
 
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-            function* geradora1(){ <br>
-              let i = 0; <br>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            function* geradora1(){ <br />
+            let i = 0; <br />
 
-              while(true){ <br>
-                yield i; <br>
-                i++ <br>
-              } <br>
-            } <br>
+            while(true){ <br />
+            yield i; <br />
+            i++ <br />
+            } <br />
+            } <br />
 
-            const geradora1 = geradora1(); <br>
+            const geradora1 = geradora1(); <br />
 
             console.log(geradora2.next().value);
-        </code>
+          </code>
+        </div>
+
+        <hr />
       </div>
-
-      <hr>
-      
-
-    </div>
     </div>
 
     <!--FIM CONTEUDO 08-->
 
     <!--INICIO CONTEUDO 09-->
     <div class="row align-items-center justify-content-center">
-    <div class="col-md-8 text-center">
+      <div class="col-md-8 text-center">
+        <h2 class="meu-h2">Objetos</h2>
 
-      <h2 class="meu-h2">Objetos</h2>
+        <p class="lead">São grupos de dados que são relacionados entre si.</p>
 
-      <p class="lead">São grupos de dados que são relacionados entre si.</p>
+        <p class="lead m-0">Declaração de Objeto</p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const objetoPessoa1 = { <br />
+            nome: 'Moises', <br />
+            sobrenome: 'Lopes', <br />
+            idade: 55 }
+          </code>
+        </div>
+        <br /><br />
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const objetoPessoa2 = { <br />
+            nome: 'Nome', <br />
+            sobrenome: 'Sobrenome', <br />
+            idade: 99 }
+          </code>
+        </div>
+        <hr />
 
-      <p class="lead m-0"> Declaração de Objeto</p>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-            const objetoPessoa1 = { <br>
-              nome: 'Moises', <br>
-              sobrenome: 'Lopes', <br>
-              idade: 55
-            }
-        </code>
-      </div>
-      <br><br>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-            const objetoPessoa2 = { <br>
-              nome: 'Nome', <br>
-              sobrenome: 'Sobrenome', <br>
-              idade: 99
-            }
-        </code>
-      </div>
-      <hr>
+        <p class="lead m-0">ACESSANDO VALORES DOS OBJETOS</p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const objetoPessoa1 = { <br />
+            nome: 'Moises', <br />
+            sobrenome: 'Lopes', <br />
+            idade: 55 <br />
+            } <br />
 
-      <p class="lead m-0">ACESSANDO VALORES DOS OBJETOS</p>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-            const objetoPessoa1 = { <br>
-              nome: 'Moises', <br>
-              sobrenome: 'Lopes', <br>
-              idade: 55 <br>
-            } <br>
+            console.log(objetoPessoa1.nome) // QUANDO SABEMOS A CHAVE <br />
+            <br />
+            const chaveDinâmica = 'nome' <br />
+            console.log(objetoPessoa1[chaveDinâmica]) // VALORES DINÂMICOS
+            <br />
+          </code>
+        </div>
+        <hr />
 
-            console.log(objetoPessoa1.nome) // QUANDO SABEMOS A CHAVE <br>
-            <br>
-            const chaveDinâmica = 'nome' <br>
-            console.log(objetoPessoa1[chaveDinâmica]) // VALORES DINÂMICOS <br>
+        <p class="lead m-0">CRIANDO OBJETOS</p>
+        <p class="lead"><b>Forma Literal</b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const objetoPessoa1 = { <br />
+            nome: 'Moises', <br />
+            sobrenome: 'Lopes', <br />
+            idade: 26 }
+          </code>
+        </div>
+        <hr />
 
-        </code>
-      </div>
-      <hr>
+        <p class="lead"><b>Forma Construtora</b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const pessoa1 = new Object(); <br />
+            pessoa1.nome = 'Moises'; <br />
+            pessoa1.sobrenome = 'Lopes' <br />
+            pessoa1.idade = 26; <br />
 
-      <p class="lead m-0">CRIANDO OBJETOS</p>
-      <p class="lead"><b>Forma Literal</b></p>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-            const objetoPessoa1 = { <br>
-              nome: 'Moises', <br>
-              sobrenome: 'Lopes', <br>
-              idade: 26
-            }
-        </code>
-      </div>
-      <hr>
+            console.log(pessoa1.nome); console.log(pessoa1.sobrenome);
+            console.log(pessoa1.idade);
+          </code>
+        </div>
+        <hr />
 
-      <p class="lead"><b>Forma Construtora</b></p>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-          const pessoa1 = new Object(); <br>
-          pessoa1.nome = 'Moises'; <br>
-          pessoa1.sobrenome = 'Lopes' <br>
-          pessoa1.idade = 26; <br>
+        <p class="lead"><b>Forma Usando Funções</b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            function criaPessoa (nome, sobrenome, idade) { <br />
+            return { <br />
+            nome: nome, <br />
+            sobrenome: sobrenome, <br />
+            idade: idade <br />
+            } <br />
+            } <br />
 
-          console.log(pessoa1.nome);
-          console.log(pessoa1.sobrenome);
-          console.log(pessoa1.idade);
+            const pessoa1 = criaPessoa ('Moises', 'Lopes', 26)
+          </code>
+        </div>
+        <hr />
 
-        </code>
-      </div>
-      <hr>
+        <p class="lead m-0">MANIPULANDO OBJETOS</p>
 
-      <p class="lead"><b>Forma Usando Funções</b></p>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-          function criaPessoa (nome, sobrenome, idade) { <br>
-            return { <br>
-              nome: nome, <br>
-              sobrenome: sobrenome, <br>
-              idade: idade <br>
-            } <br>
-          } <br>
-
-          const pessoa1 = criaPessoa ('Moises', 'Lopes', 26)
-        </code>
-      </div>
-      <hr>
-
-      <p class="lead m-0">MANIPULANDO OBJETOS</p>
-
-      <p class="lead"><b>Apagando chaves dos objetos</b></p>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-            const objetoPessoa1 = { <br>
-              nome: 'Moises', <br>
-              sobrenome: 'Lopes', <br>
-              idade: 26 <br>
-            } <br>
-            delete objetoPessoa1.nome;
-        </code>
-      </div>
-      <hr>
-
-      <p class="lead"><b>Travando Alterações no Objeto</b></p>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-            const objetoPessoa1 = { <br>
-              nome: 'Moises', <br>
-              sobrenome: 'Lopes', <br>
-              idade: 26 <br>
-            } <br>
+        <p class="lead"><b>Travando Alterações no Objeto</b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const objetoPessoa1 = { <br />
+            nome: 'Moises', <br />
+            sobrenome: 'Lopes', <br />
+            idade: 26 <br />
+            } <br />
             Objetct.freeze(objetoPessoa1);
-        </code>
-        <p class="lead text-light"><b>Desta forma os valores de cada chave do objeto 
-          não pode ser alterado/manipulados.
-        </b></p>
-      </div>
-      <hr>
+          </code>
+          <p class="lead text-light">
+            <b
+              >Desta forma os valores de cada chave do objeto não pode ser
+              alterado/manipulados.
+            </b>
+          </p>
+        </div>
+        <hr />
 
-      <p class="lead"><b>defineProperty()</b></p>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-            const objetoPessoa1 = { <br>
-              nome: 'Moises', <br>
-              sobrenome: 'Lopes', <br>
-              idade: 26 <br>
-            } <br>
-            Objetct.defineProperty(this, 'idade', { <br>
-              enumerable: true, // mostra a chave ou não. <br>
-              value: estoque, // valor da chave. <br>
-              writable: false, // pode alterar o valor ou não. <br>
-              configurable: false // pode apagar ou reconfigurar a chave ou não. <br>
+        <p class="lead"><b>defineProperty()</b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const objetoPessoa1 = { <br />
+            nome: 'Moises', <br />
+            sobrenome: 'Lopes', <br />
+            idade: 26 <br />
+            } <br />
+            Objetct.defineProperty(this, 'idade', { <br />
+            enumerable: true, // mostra a chave ou não. <br />
+            value: estoque, // valor da chave. <br />
+            writable: false, // pode alterar o valor ou não. <br />
+            configurable: false // pode apagar ou reconfigurar a chave ou não.
+            <br />
             });
-        </code>
-        <p class="lead text-light"><b>Usado quando é necessário travar alterações na chave de um objeto.</b></p>
-      </div>
-      <hr>
+          </code>
+          <p class="lead text-light">
+            <b
+              >Usado quando é necessário travar alterações na chave de um
+              objeto.</b
+            >
+          </p>
+        </div>
+        <hr />
 
-      <p class="lead"><b>defineProperties()</b></p>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-            const objetoPessoa1 = { <br>
-              nome: 'Moises', <br>
-              sobrenome: 'Lopes', <br>
-              idade: 26 <br>
-            } <br>
-            Objetct.defineProperties(this, { <br>
-              nome: { <br>
-                enumerable: true, // mostra a chave ou não. <br>
-                value: estoque, // valor da chave. <br>
-                writable: false, // pode alterar o valor ou não. <br>
-                configurable: false // pode apagar ou reconfigurar a chave ou não. <br>
-                } <br>
+        <p class="lead"><b>defineProperties()</b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const objetoPessoa1 = { <br />
+            nome: 'Moises', <br />
+            sobrenome: 'Lopes', <br />
+            idade: 26 <br />
+            } <br />
+            Objetct.defineProperties(this, { <br />
+            nome: { <br />
+            enumerable: true, // mostra a chave ou não. <br />
+            value: estoque, // valor da chave. <br />
+            writable: false, // pode alterar o valor ou não. <br />
+            configurable: false // pode apagar ou reconfigurar a chave ou não.
+            <br />
+            } <br />
 
-              sobrenome: { <br>
-                enumerable: true, // mostra a chave ou não. <br>
-                value: estoque, // valor da chave. <br>
-                writable: false, // pode alterar o valor ou não. <br>
-                configurable: false // pode apagar ou reconfigurar a chave ou não. <br>
-                } <br>
+            sobrenome: { <br />
+            enumerable: true, // mostra a chave ou não. <br />
+            value: estoque, // valor da chave. <br />
+            writable: false, // pode alterar o valor ou não. <br />
+            configurable: false // pode apagar ou reconfigurar a chave ou não.
+            <br />
+            } <br />
 
-              idade: { <br>
-                enumerable: true, // mostra a chave ou não. <br>
-                value: estoque, // valor da chave. <br>
-                writable: false, // pode alterar o valor ou não. <br>
-                configurable: false // pode apagar ou reconfigurar a chave ou não. <br>
-                } <br>
+            idade: { <br />
+            enumerable: true, // mostra a chave ou não. <br />
+            value: estoque, // valor da chave. <br />
+            writable: false, // pode alterar o valor ou não. <br />
+            configurable: false // pode apagar ou reconfigurar a chave ou não.
+            <br />
+            } <br />
 
             });
-        </code>
-        <p class="lead text-light"><b>Usado quando é necessário travar alterações nas chaves de um objeto.</b></p>
-      </div>
-      <hr>
+          </code>
+          <p class="lead text-light">
+            <b
+              >Usado quando é necessário travar alterações nas chaves de um
+              objeto.</b
+            >
+          </p>
+        </div>
+        <hr />
 
-      <p class="lead"><b>Getters e Setters</b></p>
-      <p class="lead m-0">Simula os métodos dos objetos como se fossem propriedades.</p>
-      <p class="lead m-0">Protege as propriedades do objeto</p>
-      <p class="lead m-0">Get = obter o valor</p>
-      <p class="lead">Set = configurar o valor</p>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-          const produto = { <br>
-            nome: 'Camiseta', <br>
-            preço: 20, <br>
-            estoque: 3 <br>
-          } <br>
-          Objetct.defineProperty(this, 'idade', { <br>
-            enumerable: true, // mostra a chave ou não. <br>
-            configurable: false, // pode apagar ou reconfigurar a chave ou não. <br>
-            get: function () {
-              return estoque;
-            },
-            set: function(valor){
-              if ( typeof valor !== "number") {
-                throw new TypeError("Mensagem de Erro")
-              }
+        <p class="lead"><b>Getters e Setters</b></p>
+        <p class="lead m-0">
+          Simula os métodos dos objetos como se fossem propriedades.
+        </p>
+        <p class="lead m-0">Protege as propriedades do objeto</p>
+        <p class="lead m-0">Get = obter o valor</p>
+        <p class="lead">Set = configurar o valor</p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const produto = { <br />
+            nome: 'Camiseta', <br />
+            preço: 20, <br />
+            estoque: 3 <br />
+            } <br />
+            Objetct.defineProperty(this, 'idade', { <br />
+            enumerable: true, // mostra a chave ou não. <br />
+            configurable: false, // pode apagar ou reconfigurar a chave ou não.
+            <br />
+            get: function () { return estoque; }, set: function(valor){ if (
+            typeof valor !== "number") { throw new TypeError("Mensagem de Erro")
+            } estoque = valor; } });
+          </code>
+        </div>
+        <hr />
 
-              estoque = valor;
-            }
-          });
-        </code>
-      </div>
-      <hr>
+        <p class="lead m-0">MÉTODOS ÚTEIS PARA OBJETOS</p>
 
-      <p class="lead m-0">MÉTODOS ÚTEIS PARA OBJETOS</p>
+        <p class="lead"><b>Ver as Chaves dos Objetos ( Em um Array )</b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const pessoa1 = { <br />
+            nome: 'Moises', <br />
+            sobrenome: 'Lopes', <br />
+            idade: 26 <br />
+            } <br />
+            console.log(Object.keys(pessoa1));
+          </code>
+        </div>
+        <hr />
 
-      <p class="lead"><b>Apagando chaves dos objetos</b></p>
-      <div class="d-inline-block w-75 bg-dark">
-        <code>
-            const objetoPessoa1 = { <br>
-              nome: 'Moises', <br>
-              sobrenome: 'Lopes', <br>
-              idade: 26 <br>
-            } <br>
+        <p class="lead"><b>Ver o Valor das Chaves dos Objetos ( Em um Array )</b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const pessoa1 = { <br />
+            nome: 'Moises', <br />
+            sobrenome: 'Lopes', <br />
+            idade: 26 <br />
+            } <br />
+            console.log(Object.values(pessoa1));
+          </code>
+        </div>
+        <hr />
+
+        <p class="lead"><b>Ver Valor e Chaves dos Objetos ( Em um Array )</b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const pessoa1 = { <br />
+            nome: 'Moises', <br />
+            sobrenome: 'Lopes', <br />
+            idade: 26 <br />
+            } <br />
+            console.log(Object.entries(pessoa1));
+          </code>
+        </div>
+        <hr />
+
+        <p class="lead"><b>Apagando Chaves dos Objetos</b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const objetoPessoa1 = { <br />
+            nome: 'Moises', <br />
+            sobrenome: 'Lopes', <br />
+            idade: 26 <br />
+            } <br />
             delete objetoPessoa1.nome;
-        </code>
+          </code>
+        </div>
+        <hr />
+
+        <p class="lead"><b>Copiando Objetos</b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const pessoa1 = {nome:'Moises', sobrenome:'Lopes'} <br>
+            const pessoa2 = { ...pessoa1 } // ...spread <br>
+          </code>
+        </div>
+        <br><br>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const pessoa1 = {nome:'Moises', sobrenome:'Lopes'} <br>
+            const pessoa2 = Object.assign({}, pessoa1) <br>
+          </code>
+        </div>
+        <hr />
+
+        <p class="lead"><b>Ver as propriedades da Chave de um Objeto</b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            const objetoPessoa1 = { <br />
+            nome: 'Moises', <br />
+            sobrenome: 'Lopes', <br />
+            idade: 26 <br />
+            } <br />
+            console.log(Object.getOwnPropertyDescriptor(pessoa1, 'nome'))
+          </code>
+          <p class="lead text-light">
+            <b>Nesse métodos veremos as propriedades que podemos alterar usando
+              "defineProperty()" e "defineProperties()"
+            </b>
+          </p>
+        </div>
+        <hr />
+
+        <p class="lead m-0">PROTOTYPES</p>
+
+        <p class="lead"><b>Molde ou Modelo criado pela primeira vez, que
+          serve para produções futuras.
+        </b></p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            // FUNÇÃO CONSTRUTORA = MOLDE <br>
+            function Pessoa( nome, sobrenome ){ <br>
+              this.nome = nome; <br>
+              this.sobrenome = sobrenome; <br>
+            } <br>
+            Pessoa.prototype.nomeCompleto = function(){ <br>
+              return this.nome + " " + this.sobrenome; <br>
+            } <br>
+
+            // INSTÂNCIA = OBJETOS QUE SERÃO CRIADOS <br>
+            const pessoa1 = new Pessoa ('Moises', 'L') <br>
+            const pessoa2 = new Pessoa ('Rita', 'M') <br>
+
+            console.log(pessoa1) <br>
+            consloe.log(pessoa2)
+          </code>
+        </div>
+        <hr />
+
+
       </div>
-      <hr>
-
-
-    </div>
     </div>
     <!--FIM CONTEUDO 09-->
 
     <!--INICIO CONTEUDO 10-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
-  
         <h2 class="meu-h2">Lógica de Programação</h2>
-        
+
         <p class="lead"><b>OPERADORES DE COMPARAÇÃO</b></p>
 
         <div class="d-inline-block mb-3 w-75 bg-info text-light">
@@ -1130,8 +1400,10 @@
               <p class="lead"><b>NaN</b></p>
             </li>
             <li class="text-center">
-              <p class="lead"><b>OBS.:</b> TUDO QUE FOR DIFERENTE DE 
-              TODOS OS DADOS ACIMA IRÃO RETORNAR "TRUE"</p>
+              <p class="lead">
+                <b>OBS.:</b> TUDO QUE FOR DIFERENTE DE TODOS OS DADOS ACIMA IRÃO
+                RETORNAR "TRUE"
+              </p>
             </li>
           </ul>
         </div>
@@ -1142,14 +1414,25 @@
           <ul style="list-style: none">
             <li class="text-center">
               <p class="lead m-0"><b>IF ( condição ) { código }</b></p>
-              <p class="lead">Se for TRUE excecuta o código, se for FALSE não executa nada.</p>
+              <p class="lead">
+                Se for TRUE excecuta o código, se for FALSE não executa nada.
+              </p>
             </li>
             <li class="text-center">
-              <p class="lead m-0"><b>IF ( condição ) { código } ELSE IF ( condição ) { código }</b></p>
+              <p class="lead m-0">
+                <b
+                  >IF ( condição ) { código } ELSE IF ( condição ) { código }</b
+                >
+              </p>
               <p class="lead">Se for TRUE excecuta o IF, se for FALSE o ELSE</p>
             </li>
             <li class="text-center">
-              <p class="lead m-0"><b>ELSE = Se tiver varias verificações, usa ELSE IF, se tiver só uma, usa ELSE</b></p>
+              <p class="lead m-0">
+                <b
+                  >ELSE = Se tiver varias verificações, usa ELSE IF, se tiver só
+                  uma, usa ELSE</b
+                >
+              </p>
             </li>
           </ul>
         </div>
@@ -1159,7 +1442,9 @@
         <div class="d-inline-block mb-3 w-75 bg-info text-light">
           <ul style="list-style: none">
             <li class="text-center">
-              <p class="lead m-0"><b>(condição) ? (valor verdadeiro) : (valor falso)</b></p>
+              <p class="lead m-0">
+                <b>(condição) ? (valor verdadeiro) : (valor falso)</b>
+              </p>
               <p class="lead">Executa como se fosse um IF e ELSE</p>
             </li>
           </ul>
@@ -1170,20 +1455,23 @@
         <div class="d-inline-block mb-3 w-75 bg-info text-light">
           <ul style="list-style: none">
             <li class="text-center">
-              <p class="lead m-0"><b>" switch (variavel) {case "valor verdadeiro": "código de execução"; break default: "valor padrão"; break }</b></p>
+              <p class="lead m-0">
+                <b
+                  >" switch (variavel) {case "valor verdadeiro": "código de
+                  execução"; break default: "valor padrão"; break }</b
+                >
+              </p>
               <p class="lead">Executa como se fosse um IF e ELSE</p>
             </li>
           </ul>
         </div>
-
       </div>
-      </div>
-      <!--FIM CONTEUDO 10-->
+    </div>
+    <!--FIM CONTEUDO 10-->
 
-      <!--INICIO CONTEUDO 11-->
+    <!--INICIO CONTEUDO 11-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
-  
         <h2 class="meu-h2">Estrutura de Repetição</h2>
 
         <p class="lead"><b>FOR (CLÁSSICO)</b></p>
@@ -1191,9 +1479,18 @@
         <div class="d-inline-block mb-3 w-75 bg-info text-light">
           <ul style="list-style: none">
             <li class="text-center">
-              <p class="lead m-0"><b>FOR ( LET i = 0 ; i <= 5 ; i++ ) { CÓDIGO QUE SERÁ REPETIDO }</b></p>
-              <p class="lead">O laço se encerra quando a condição se tornar FALSE</p>
-              <p class="lead">Usado com Elementos Iteráveis ( Array ou String )</p>
+              <p class="lead m-0">
+                <b
+                  >FOR ( LET i = 0 ; i <= 5 ; i++ ) { CÓDIGO QUE SERÁ REPETIDO
+                  }</b
+                >
+              </p>
+              <p class="lead">
+                O laço se encerra quando a condição se tornar FALSE
+              </p>
+              <p class="lead">
+                Usado com Elementos Iteráveis ( Array ou String )
+              </p>
             </li>
           </ul>
         </div>
@@ -1203,9 +1500,13 @@
         <div class="d-inline-block mb-3 w-75 bg-info text-light">
           <ul style="list-style: none">
             <li class="text-center">
-              <p class="lead m-0"><b>FOR ( LET i IN ARRAY ) { CÓDIGO QUE SERÁ REPETIDO }</b></p>
+              <p class="lead m-0">
+                <b>FOR ( LET i IN ARRAY ) { CÓDIGO QUE SERÁ REPETIDO }</b>
+              </p>
               <p class="lead">Percorre os indices do Array</p>
-              <p class="lead">Usado com Elementos Não Iteráveis ( Array, String ou Objetos )</p>
+              <p class="lead">
+                Usado com Elementos Não Iteráveis ( Array, String ou Objetos )
+              </p>
             </li>
           </ul>
         </div>
@@ -1215,9 +1516,13 @@
         <div class="d-inline-block mb-3 w-75 bg-info text-light">
           <ul style="list-style: none">
             <li class="text-center">
-              <p class="lead m-0"><b>FOR ( LET i OF ARRAY) { CÓDIGO QUE SERÁ REPETIDO }</b></p>
+              <p class="lead m-0">
+                <b>FOR ( LET i OF ARRAY) { CÓDIGO QUE SERÁ REPETIDO }</b>
+              </p>
               <p class="lead">Retorna o valor de cada indice do Array</p>
-              <p class="lead">Usado com Elementos Iteráveis ( Array ou String )</p>
+              <p class="lead">
+                Usado com Elementos Iteráveis ( Array ou String )
+              </p>
             </li>
           </ul>
         </div>
@@ -1229,7 +1534,12 @@
         <div class="d-inline-block mb-3 w-75 bg-info text-light">
           <ul style="list-style: none">
             <li class="text-center">
-              <p class="lead m-0"><b> ARRAY.forEach ( function ( valor, indice, array ) { CÓDIGO QUE SERÁ REPETIDO } )</b></p>
+              <p class="lead m-0">
+                <b>
+                  ARRAY.forEach ( function ( valor, indice, array ) { CÓDIGO QUE
+                  SERÁ REPETIDO } )</b
+                >
+              </p>
               <p class="lead">Retorna Indice e Valor do Array</p>
             </li>
           </ul>
@@ -1240,8 +1550,13 @@
         <div class="d-inline-block mb-3 w-75 bg-info text-light">
           <ul style="list-style: none">
             <li class="text-center">
-              <p class="lead m-0"><b>LET i = 0; WHILE ( CONDIÇÃO ) { CÓDIGO QUE SERÁ REPETIDO i++; }</b></p>
-              <p class="lead">Checa a condição e executa o código. </p>
+              <p class="lead m-0">
+                <b
+                  >LET i = 0; WHILE ( CONDIÇÃO ) { CÓDIGO QUE SERÁ REPETIDO i++;
+                  }</b
+                >
+              </p>
+              <p class="lead">Checa a condição e executa o código.</p>
             </li>
           </ul>
         </div>
@@ -1251,8 +1566,13 @@
         <div class="d-inline-block mb-3 w-75 bg-info text-light">
           <ul style="list-style: none">
             <li class="text-center">
-              <p class="lead m-0"><b>LET i = 0; DO { CÓDIGO QUE SERÁ REPETIDO i++; } WHILE ( CONDIÇÃO ) </b></p>
-              <p class="lead">Excuta o código e depois checa a condição </p>
+              <p class="lead m-0">
+                <b
+                  >LET i = 0; DO { CÓDIGO QUE SERÁ REPETIDO i++; } WHILE (
+                  CONDIÇÃO )
+                </b>
+              </p>
+              <p class="lead">Excuta o código e depois checa a condição</p>
             </li>
           </ul>
         </div>
@@ -1263,46 +1583,61 @@
           <ul style="list-style: none">
             <li class="text-center">
               <p class="lead">Funciona em todos os laços de repetição</p>
-              <p class="lead"><b>CONTINUE:</b> Pula pra próxima iteração do laço de repetição, sem executar o código seguinte.</p>
-              <p class="lead"><b>BREAK:</b> Encerra todo o laço de repetição assim que encontra a condição verdadeira.</p>
+              <p class="lead">
+                <b>CONTINUE:</b> Pula pra próxima iteração do laço de repetição,
+                sem executar o código seguinte.
+              </p>
+              <p class="lead">
+                <b>BREAK:</b> Encerra todo o laço de repetição assim que
+                encontra a condição verdadeira.
+              </p>
             </li>
           </ul>
         </div>
-
       </div>
     </div>
-      <!--FIM CONTEUDO 11-->
+    <!--FIM CONTEUDO 11-->
 
-      <!--INICIO CONTEUDO 12-->
+    <!--INICIO CONTEUDO 12-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
-  
         <h2 class="meu-h2">DOM - Arvore do DOM</h2>
-        
+
         <p class="lead">DOM = Document Object Model</p>
-        
-        <p class="lead">Se trata da interface de manipulação de elementos HTML</p>
+
+        <p class="lead">
+          Se trata da interface de manipulação de elementos HTML
+        </p>
 
         <p class="lead bg-info">window = Pai de todos os Elementos da Página</p>
         <p class="lead bg-info">document = Pai do Elemento HTML</p>
 
-        <hr>
+        <hr />
 
-        <p class="lead"><b>CRIA UM ELEMENTO</b> = document.creatElement(ELEMENTO)</p>
-        <p class="lead"><b>DEFINE O PAI DO ELEMENTO CRIADO</b> = elementoPai.appendChild(ELEMENTO)</p>
-        <p class="lead"><b>SELECIONA UM ELEMENTO NO DOM</b> = document.querySelector('.classe' ou '#id')</p>
-        <p class="lead"><b>SELECIONA LISTA DE ELEMENTOS [NodeList]</b> = elementoPai.querySelectorAll('elemento')</p>
+        <p class="lead">
+          <b>CRIA UM ELEMENTO</b> = document.creatElement(ELEMENTO)
+        </p>
+        <p class="lead">
+          <b>DEFINE O PAI DO ELEMENTO CRIADO</b> =
+          elementoPai.appendChild(ELEMENTO)
+        </p>
+        <p class="lead">
+          <b>SELECIONA UM ELEMENTO NO DOM</b> = document.querySelector('.classe'
+          ou '#id')
+        </p>
+        <p class="lead">
+          <b>SELECIONA LISTA DE ELEMENTOS [NodeList]</b> =
+          elementoPai.querySelectorAll('elemento')
+        </p>
 
-        <hr>
-  
+        <hr />
       </div>
-      </div>
-      <!--FIM CONTEUDO 12-->
+    </div>
+    <!--FIM CONTEUDO 12-->
 
-      <!--INICIO CONTEUDO 13-->
+    <!--INICIO CONTEUDO 13-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
-  
         <h2 class="meu-h2">TRATANDO E LANÇANDO ERROS</h2>
 
         <p class="lead m-0"><b>BLOCO "TRY{}"</b></p>
@@ -1316,33 +1651,27 @@
 
         <p class="lead"><b>BLOCO "THROW()"</b></p>
         <p class="lead"></p>
-
       </div>
-      </div>
-      <!--FIM CONTEUDO 13-->
+    </div>
+    <!--FIM CONTEUDO 13-->
 
-      <!--INICIO CONTEUDO 14-->
+    <!--INICIO CONTEUDO 14-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
-  
         <h2 class="meu-h2">14</h2>
-  
       </div>
-      </div>
-      <!--FIM CONTEUDO 14-->
+    </div>
+    <!--FIM CONTEUDO 14-->
 
-      <!--INICIO CONTEUDO 15-->
+    <!--INICIO CONTEUDO 15-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
-  
         <h2 class="meu-h2">15</h2>
-  
       </div>
-      </div>
-      <!--FIM CONTEUDO 15-->
+    </div>
+    <!--FIM CONTEUDO 15-->
 
-
-    <br><br><br><br><br>
+    <br /><br /><br /><br /><br />
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script
