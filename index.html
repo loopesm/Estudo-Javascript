@@ -1713,7 +1713,7 @@
     <!--INICIO CONTEUDO 13-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
-        <h2 class="meu-h2">TRATANDO E LANÇANDO ERROS</h2>
+        <h2 class="meu-h2">Tratando e Lançando Erros</h2>
 
         <p class="lead m-0"><b>BLOCO "TRY{}"</b></p>
         <p class="lead">É executado quando não há erros.</p>
@@ -1733,9 +1733,60 @@
     <!--INICIO CONTEUDO 14-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
-        <h2 class="meu-h2">14</h2>
+        <h2 class="meu-h2">Classes</h2>
+
+        <p class="lead text-dark">Classes são uma forma diferente de escrever uma Função Contrutora, porém de forma muito mais simples.</p>
+
+        <p class="lead m-0">Criando Classes</p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            class moldePessoa { <br>
+              constructor(nome,sobrenome){ <br>
+                this.nome = nome; <br>
+                this.nome = sobrenome; <br>
+              } <br><br>
+
+              metodoFalar() {<br>
+                console.log(´${this.nome} está falando´) <br>
+              } <br>
+            } <br><br>
+
+            const p1 = new Pessoa ('Moises', 'Lopes');<br>
+            console.log(p1) <br><br>
+            
+          </code>
+        </div>
+
+        <hr>
+
+        <p class="lead m-0">Getters e Setters</p>
+        <div class="d-inline-block w-75 bg-dark">
+          <code>
+            class moldePessoa { <br>
+              constructor(nome,sobrenome){ <br>
+                this.nome = nome; <br>
+                this.nome = sobrenome; <br>
+              } <br><br>
+
+              get nomeCompleto() {
+                return this.nome + ' ' + this.sobrenome;
+              }
+
+              set nomeCompleto(valor) {
+                valor = valor.split(' ');
+                this.nome = valor.shift();
+                this.sobrenome = valor.join(" ")
+              }
+
+            const p1 = new Pessoa ('Moises', 'Lopes');<br>
+            console.log(p1.nomeCompleto) <br><br>
+            
+          </code>
+        </div>
+
       </div>
     </div>
+    <hr>
     <!--FIM CONTEUDO 14-->
 
     <!--INICIO CONTEUDO 15-->
