@@ -1768,21 +1768,23 @@
                 this.nome = sobrenome; <br>
               } <br><br>
 
-              get nomeCompleto() {
-                return this.nome + ' ' + this.sobrenome;
-              }
+              get nomeCompleto() { <br>
+                return this.nome + ' ' + this.sobrenome; <br>
+              } <br><br>
 
-              set nomeCompleto(valor) {
-                valor = valor.split(' ');
-                this.nome = valor.shift();
-                this.sobrenome = valor.join(" ")
-              }
+              set nomeCompleto(valor) { <br>
+                valor = valor.split(' '); <br>
+                this.nome = valor.shift(); <br>
+                this.sobrenome = valor.join(" ") <br>
+              } <br><br>
 
             const p1 = new Pessoa ('Moises', 'Lopes');<br>
             console.log(p1.nomeCompleto) <br><br>
             
           </code>
         </div>
+
+        <hr>
 
       </div>
     </div>
