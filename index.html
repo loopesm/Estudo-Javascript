@@ -1893,13 +1893,9 @@
         <p class="lead m-0">XMLHttpRequest(GET) + Promises</p>
         <div class="d-inline-block w-75 bg-dark">
           <code>
-
-            
           </code>
         </div>
         <hr>
-
-
 
         <hr>
       </div>
@@ -1909,7 +1905,51 @@
     <!--INICIO CONTEUDO 16-->
     <div class="row align-items-center justify-content-center">
       <div class="col-md-8 text-center">
-        <h2 class="meu-h2">16</h2>
+        <h2 class="meu-h2">Módulos</h2>
+
+        <p class="lead text-dark">Instalação do Babel e WebPack ( No terminal - Usando NPM )</p>
+
+        <code class="d-inline-block w-75 bg-dark p-2">npm i --save-dev webpack webpack-cli babel-loader regenerator-runtime core-js @babel/cli @babel/preset-env @babel/core</code>
+
+        <hr>
+
+        <p class="lead text-dark">Ignorando a Pasta do Node Modules no GitHub</p>
+
+        <code class="d-inline-block bg-dark p-2 w-75">Criar um arquivo ".gitignore" <br>
+        Colocar dentro desse arquivo o nome da pasta ou dos arquivos que serão ignorados.</code>
+
+        <hr>
+
+        <p class="lead text-dark">Arquivo de Configuração do Webpack</p>
+        <code class="bg-dark p-2">Criar um arquivo "webpack.config.js"</code> <br>
+        <code class="d-inline-block w-75 bg-dark p-2">//CONFIGURAÇÃO DO ARQUIVO// <br>
+        const path = require('path'); // CommonJS <br>
+        module.exports = { <br>
+          mode: 'development,' <br>
+          entry: './src/index.js', <br>
+          output: { <br>
+            path: path.resolve(__dirname, 'public', 'assets', 'js'), <br>
+            filename: bundle.js <br>
+          }, <br>
+          module:{ <br>
+            rules:[{ <br>
+              exclude:/node_modules/, <br>
+              test: /\.js$/, <br>
+              use:{ <br>
+                loader: 'babel-loader', <br>
+                options:{ <br>
+                  presets: ['@babel/env'] <br>
+                } <br>
+              } <br>
+            }] <br>
+          }, <br>
+          devtool:'source-map' <br>
+        }</code>
+
+        <code class="bg-dark p-2">Comando para Ativar = " npm webpack -w "</code> <br>
+
+
+
         <hr>
       </div>
     </div>
